@@ -11,9 +11,9 @@ var trollSlider = {
         var dots ='';
         if (!$('.one-slide').attr('data-slide')){
             $('.one-slide').each(function() {
-                $(this).attr({ 'data-slide': i });
+                $(this).attr({ 'data-slide': i, 'data-dot': i });
                 var imgLink= $(this).find('.image').find('img').attr('src');
-                dots = dots+'<li><button data-slide="'+i+'" style="background-image:url(../'+imgLink+')"></button></li>';
+                dots = dots+'<li><button data-dot="'+i+'" style="background-image:url(../'+imgLink+')"></button></li>';
                 i++;
 
             });
@@ -25,6 +25,7 @@ var trollSlider = {
              $('.troll-slider').prepend(slide);
          }
         indexSlide();
+        actualDot();
 
 
 
@@ -39,6 +40,11 @@ var trollSlider = {
             }
         }
     }
+}
+function actualDot(){
+    $('#dots button').removeClass('actual')
+    var i = $('.active-slide').attr('data-dot');
+    $('#dots button[data-dot='+i+']').addClass('actual');
 }
 function indexSlide(){
     var slider = $('.troll-slider');
@@ -65,6 +71,7 @@ function nextSlide(){
          slide.attr('data-slide', numItems );
          $('.troll-slider').append(slide);
          indexSlide();
+         actualDot();
 }
 function prevSlide(){
          $('.one-slide').each(function() {
@@ -79,6 +86,7 @@ function prevSlide(){
          slide.attr('data-slide', 0 );
          $('.troll-slider').prepend(slide);
          indexSlide();
+         actualDot();
 }
 
 
