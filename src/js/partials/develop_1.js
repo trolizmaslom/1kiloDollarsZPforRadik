@@ -19,6 +19,15 @@ function sedwichMenu(){
         }
     });
 
+    $(window).resize(function(){
+
+        if($(window).width()>1024){
+            $('.header-menu').removeAttr('style');
+            $('.header-menu-sendwich-wrap').removeClass('active');
+        }
+
+    });
+
 };
 
 $(document).ready(function(){
