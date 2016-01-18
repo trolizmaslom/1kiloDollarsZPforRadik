@@ -11,9 +11,11 @@ canvas{width: 100%;}
                 &:nth-child(2){margin-right:20.75%; margin-left:20.75%;}
             }
         }
-        .button-promote{ display: block; text-decoration: none; max-width: 360px; border-radius: 3px; margin: 0 auto; border-bottom: 2px solid rgba(0, 0, 0,0.8);background-color: rgba(0, 0, 0,0.25);border-top: 2px solid transparent; transition: all 0.5s;
+        .button-promote{ display: block; text-decoration: none; max-width: 360px; border-radius: 3px; margin: 0 auto; border-bottom: 2px solid rgba(0, 0, 0,0.8);background-color: rgba(0, 0, 0,0.25);border-top: 2px solid transparent; transition: all 0.5s;background-color: #832425;border-radius: 2px;font-size: 18px;text-transform: uppercase;border:1px solid transparent;border-bottom: 1px solid #741e1f;padding: 14px 0px;color: white;cursor: pointer;transition:all ease-out .3s;margin:0 auto;
+            &:hover{background-color:#962224;}
+            &:active{border-bottom: 1px solid transparent;border-top:1px solid #581A1B;background-color: #6D2122; }
             .button-text{font-size: 25px; font-family: "Roboto"; color: rgba(255, 255, 255, 0.769); text-transform: uppercase; line-height: 1.2; text-align: center; padding: 23px;}
-            &:hover{ border-top: 2px solid rgba(0, 0, 0,0.8); }
+
         }
     }
 }
