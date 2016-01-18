@@ -108,7 +108,7 @@ body{
         .top-block-logo, .top-block-text, .top-block-scroll-button{display: none;}
 
         .top-block-canvas{position: relative;z-index: 0;
-            canvas{max-width: 100%;}
+            canvas{max-width: 100%;width:auto;}
         }
 
         .wach-video-button{margin-top: -80px;position: relative;z-index: 1;
