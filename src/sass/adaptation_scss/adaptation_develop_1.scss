@@ -73,7 +73,7 @@
                 li{font-size: 60px;margin-bottom: 45px;}
             }
             .header-menu-conect{padding-bottom: 80px;margin-bottom: 30px;}
-            .header-leng-text{display: block;margin-bottom: 10px;text-transform: uppercase;}
+            .header-leng-text{display: block;margin-bottom: 20px;text-transform: uppercase;font-size: 35px;}
             .header-leng-link{margin-left: 45px;
                 img{max-width: 100%;}
                 &.active{
@@ -87,6 +87,22 @@
 
 }
 @media screen and (max-width: 479px){
+
+    /* header */
+
+        .header{
+            .header-menu-main{
+                li{font-size: 40px;margin-bottom: 20px;}
+            }
+            .header-menu-conect{padding-bottom: 30px;}
+            .conect-icon{
+                &:nth-child(2){margin: 0 30px;}
+            }
+            .header-leng-text{font-size: 20px;margin-bottom: 20px;}
+            .header-menu-sendwich{right: 20px;}
+        }
+
+    /* /header */
 
 }
 @media screen and (max-width: 320px){
