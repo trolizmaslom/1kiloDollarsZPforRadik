@@ -10,6 +10,20 @@
 
 /* /plagins */
 
+/* canvas */
+
+//= canvas/spin.js
+//= canvas/web.js
+//= canvas/identety.js
+//= canvas/cards.js
+//= canvas/clock.js
+//= canvas/guaranteed.js
+//= canvas/header_ru.js
+//= canvas/header_en.js
+
+/* /canvas */
+
+
 //= partials/basic_scripts.js
 
 //= partials/develop_1.js
