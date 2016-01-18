@@ -21,7 +21,7 @@ img{vertical-align:bottom;border:0;max-width:100%;}
 
 /* wraps styling*/
 
-.mbox{max-width:1024px;width:100%;margin:0 auto;position:relative;z-index:1;}
+.mbox{max-width:1310px;width:100%;margin:0 auto;position:relative;z-index:1;padding: 0 15px;}
 .mbox:after{content:"";clear:both;font-size:1px;line-height:1px;height:0;overflow:hidden;display:block;}
 
 /* /wraps styling*/
@@ -36,3 +36,11 @@ img{vertical-align:bottom;border:0;max-width:100%;}
 :-ms-input-placeholder {color:#212121;}
 
 /*End Layout*/
+
+@media screen and (max-width: 1024px){
+    .mbox{padding:0 40px;}
+}
+
+@media screen and (max-width: 640px){
+    .mbox{padding:0 20px;}
+}
