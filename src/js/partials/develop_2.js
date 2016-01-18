@@ -130,6 +130,82 @@ function handleComplete5(evt) {
 }
 
 
+function init6() {
+    canvas6 = document.getElementById("cards");
+    images = images||{};
+
+    var loader = new createjs.LoadQueue(false);
+    loader.addEventListener("fileload", handleFileLoad6);
+    loader.addEventListener("complete", handleComplete6);
+    loader.loadManifest(lib.properties.manifest);
+}
+
+function handleFileLoad6(evt) {
+    if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
+}
+
+function handleComplete6(evt) {
+    exportRoot = new lib.cards();
+
+    stage = new createjs.Stage(canvas6);
+    stage.addChild(exportRoot);
+    stage.update();
+
+    createjs.Ticker.setFPS(lib.properties.fps);
+    createjs.Ticker.addEventListener("tick", stage);
+}
+
+function init7() {
+    canvas7 = document.getElementById("clock");
+    images = images||{};
+
+    var loader = new createjs.LoadQueue(false);
+    loader.addEventListener("fileload", handleFileLoad7);
+    loader.addEventListener("complete", handleComplete7);
+    loader.loadManifest(lib.properties.manifest);
+}
+
+function handleFileLoad7(evt) {
+    if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
+}
+
+function handleComplete7(evt) {
+    exportRoot = new lib.clock();
+
+    stage = new createjs.Stage(canvas7);
+    stage.addChild(exportRoot);
+    stage.update();
+
+    createjs.Ticker.setFPS(lib.properties.fps);
+    createjs.Ticker.addEventListener("tick", stage);
+}
+
+
+function init8() {
+    canvas8 = document.getElementById("guaranteed");
+    images = images||{};
+
+    var loader = new createjs.LoadQueue(false);
+    loader.addEventListener("fileload", handleFileLoad8);
+    loader.addEventListener("complete", handleComplete8);
+    loader.loadManifest(lib.properties.manifest);
+}
+
+function handleFileLoad8(evt) {
+    if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
+}
+
+function handleComplete8(evt) {
+    exportRoot = new lib.guaranteed();
+
+    stage = new createjs.Stage(canvas8);
+    stage.addChild(exportRoot);
+    stage.update();
+
+    createjs.Ticker.setFPS(lib.properties.fps);
+    createjs.Ticker.addEventListener("tick", stage);
+}
+
 
 $(document).ready(function(){
     init();
@@ -137,6 +213,9 @@ $(document).ready(function(){
     init3();
     init4();
     init5();
+    init6();
+    init7();
+    init8();
 });
 
 $(window).load(function(){
