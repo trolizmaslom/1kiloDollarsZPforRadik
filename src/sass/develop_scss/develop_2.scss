@@ -28,7 +28,7 @@ canvas{width: 100%;}
         }
         .content-bock{
             .item{display: inline-block; width: 30%;
-                .canvas-block{ }
+                .canvas-block{ width: 100%;  height: auto;}
                 .subtext{ text-align: center;}
             }
         }
