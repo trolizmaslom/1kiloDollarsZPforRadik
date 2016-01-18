@@ -1,0 +1,28 @@
+/*contact-form*/
+.contact-form{background: linear-gradient(to right, #6f1f1f 0%,#9c2c2c 50%,#6f1f1f 100%);position: relative;text-align: center;
+    .mbox{}
+    .contact-form-image{position: absolute;bottom: 20px;
+        &.right{right: 10px;}
+        &.left{left: 10px;}
+    }
+    .contact-form-wrap{padding-top: 197px;}
+    .contact-form-title{font-size: 60px;font-family: 'BebasNeue';line-height: 60px;
+        .contact-form-title-top{color: #611919;text-transform: uppercase;}
+        .contact-form-title-bottom{color: white;text-transform: uppercase;}
+    }
+    .contact-form-bottom{margin:0 auto;max-width: 605px;width: 100%;padding-top: 64px;
+        .form_input{position: relative;}
+        .contact-form-item{margin-bottom: 34px;
+            &:nth-child(3){margin-bottom: 54px;}
+        }
+        label{color: white;text-transform: uppercase;font-size: 16px;font-weight: normal;position: absolute;transition:all ease .3s;pointer-events:none;
+            &.active{font-size: 12px;top: -12px;}
+        }
+        input,textarea{width: 100%;border:none;border-bottom: 1px solid #872526;padding: 5px 10px;background-color: transparent;resize:none;font-size: 14px;}
+    }
+    .contact-submit{max-width: 185px;width: 100%;background-color: #832425;border-radius: 2px;font-size: 18px;text-transform: uppercase;border:1px solid transparent;border-bottom: 1px solid #741e1f;padding: 14px 0px;color: white;cursor: pointer;
+        &:hover{background-color:#962224;}
+        &:active{border-bottom: 1px solid transparent;border-top: 1px solid #741e1f;}
+        span{}
+    }
+}
