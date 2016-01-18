@@ -14,7 +14,7 @@
         .header{
             .header-main{padding: 0;}
             .header-menu-main{
-                li{margin-right: 25px;}
+                li{margin-right: 20px;}
             }
         }
 
@@ -56,6 +56,16 @@
 
     /* /header */
 
+    /* top-block */
+
+        .top-block{
+            .wach-video-button{
+                a{height: 50px;line-height: 50px;font-size: 16px;width: 200px;}
+            }
+        }
+
+    /* /top-block */
+
 }
 @media screen and (max-width: 666px){
 
@@ -63,6 +73,7 @@
 @media screen and (max-width: 640px){
 
     .hidden-xs{display: none!important;}
+    .visible-xs{display: block!important;}
 
     /* header */
 
@@ -96,6 +107,12 @@
         }
 
     /* /footer */
+
+    /* top-block */
+
+        .top-block{background-position: 65% 65%;}
+
+    /* /top-block */
 
 }
 @media screen and (max-width: 479px){
