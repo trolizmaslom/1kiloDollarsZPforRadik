@@ -1,24 +1,7 @@
 (function (lib, img, cjs, ss) {
 
 var p; // shortcut to reference prototypes
-
-// library properties:
-lib.properties = {
-	width: 208,
-	height: 221,
-	fps: 35,
-	color: "#AF0000",
-	manifest: [
-		{src:"images/chips.png", id:"chips"},
-		{src:"images/title.png", id:"title"}
-	]
-};
-
-
-
 // symbols:
-
-
 
 (lib.chips = function() {
 	this.initialize(img.chips);
@@ -32,7 +15,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,166,157);
 p.nominalBounds = new cjs.Rectangle(0,0,228,84);
 
 
-(lib.Символ12 = function() {
+(lib.wertвол12 = function() {
 	this.initialize();
 
 	// Слой 1
@@ -45,7 +28,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,228,84);
 p.nominalBounds = new cjs.Rectangle(0,0,18.7,19.8);
 
 
-(lib.Символ11 = function() {
+(lib.wertвол11 = function() {
 	this.initialize();
 
 	// Слой 1
@@ -58,7 +41,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,18.7,19.8);
 p.nominalBounds = new cjs.Rectangle(0,0,30.7,19.9);
 
 
-(lib.Символ10 = function() {
+(lib.wertвол10 = function() {
 	this.initialize();
 
 	// Слой 1
@@ -71,7 +54,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,30.7,19.9);
 p.nominalBounds = new cjs.Rectangle(0,0,19.3,20.6);
 
 
-(lib.Символ9 = function() {
+(lib.wertвол9 = function() {
 	this.initialize();
 
 	// Слой 1
@@ -84,7 +67,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,19.3,20.6);
 p.nominalBounds = new cjs.Rectangle(0,0,5.5,19.8);
 
 
-(lib.Символ8 = function() {
+(lib.wertвол8 = function() {
 	this.initialize();
 
 	// Слой 1
@@ -97,7 +80,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,5.5,19.8);
 p.nominalBounds = new cjs.Rectangle(0,0,17.7,19.8);
 
 
-(lib.Символ7 = function() {
+(lib.wertвол7 = function() {
 	this.initialize();
 
 	// Слой 1
@@ -110,7 +93,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,17.7,19.8);
 p.nominalBounds = new cjs.Rectangle(0,-18.9,5.5,137.7);
 
 
-(lib.Символ6 = function() {
+(lib.wertвол6 = function() {
 	this.initialize();
 
 	// Слой 1
@@ -123,7 +106,7 @@ p.nominalBounds = new cjs.Rectangle(0,-18.9,5.5,137.7);
 p.nominalBounds = new cjs.Rectangle(0,0,5.5,87.2);
 
 
-(lib.Символ5 = function() {
+(lib.wertвол5 = function() {
 	this.initialize();
 
 	// Слой 1
@@ -136,7 +119,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,5.5,87.2);
 p.nominalBounds = new cjs.Rectangle(0,0,5.5,60.6);
 
 
-(lib.Символ2 = function() {
+(lib.wertвол2 = function() {
 	this.initialize();
 
 	// Слой 1
@@ -147,7 +130,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,5.5,60.6);
 p.nominalBounds = new cjs.Rectangle(0,0,166,157);
 
 
-(lib.Символ1 = function(mode,startPosition,loop) {
+(lib.wertвол1 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
 	// timeline functions:
@@ -262,7 +245,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,166,157);
 p.nominalBounds = null;
 
 
-(lib.Символ3 = function(mode,startPosition,loop) {
+(lib.wertвол3 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
 	// timeline functions:
@@ -273,40 +256,40 @@ p.nominalBounds = null;
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).wait(44).call(this.frame_44).wait(1));
 
-	// Символ 12
-	this.instance = new lib.Символ12();
+	// wertвол 12
+	this.instance = new lib.wertвол12();
 	this.instance.setTransform(108.9,35.5,1,1,0,0,0,9.3,9.8);
 	this.instance.alpha = 0;
 	this.instance._off = true;
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(12).to({_off:false},0).wait(1).to({regY:9.9,y:28.8,alpha:0.222},0).wait(1).to({y:23.6,alpha:0.391},0).wait(1).to({y:19.8,alpha:0.514},0).wait(1).to({y:17,alpha:0.604},0).wait(1).to({y:14.8,alpha:0.674},0).wait(1).to({y:13.1,alpha:0.731},0).wait(1).to({y:11.6,alpha:0.779},0).wait(1).to({y:10.4,alpha:0.819},0).wait(1).to({y:9.4,alpha:0.852},0).wait(1).to({y:8.6,alpha:0.88},0).wait(1).to({y:7.8,alpha:0.903},0).wait(1).to({y:7.2,alpha:0.922},0).wait(1).to({y:6.8,alpha:0.938},0).wait(1).to({y:6.3,alpha:0.952},0).wait(1).to({y:6,alpha:0.963},0).wait(1).to({y:5.7,alpha:0.972},0).wait(1).to({y:5.5,alpha:0.98},0).wait(1).to({y:5.3,alpha:0.986},0).wait(1).to({y:5.1,alpha:0.992},0).wait(1).to({y:5,alpha:0.996},0).wait(1).to({regY:9.8,y:4.7,alpha:1},0).to({y:10.2},5).wait(7));
 
-	// Символ 11
-	this.instance_1 = new lib.Символ11();
+	// wertвол 11
+	this.instance_1 = new lib.wertвол11();
 	this.instance_1.setTransform(72.9,35.7,1,1,0,0,0,15.3,10);
 	this.instance_1.alpha = 0;
 	this.instance_1._off = true;
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(9).to({_off:false},0).wait(1).to({regY:9.9,y:28.8,alpha:0.222},0).wait(1).to({y:23.6,alpha:0.391},0).wait(1).to({y:19.8,alpha:0.514},0).wait(1).to({y:17,alpha:0.604},0).wait(1).to({y:14.8,alpha:0.674},0).wait(1).to({y:13.1,alpha:0.731},0).wait(1).to({y:11.6,alpha:0.779},0).wait(1).to({y:10.4,alpha:0.819},0).wait(1).to({y:9.4,alpha:0.852},0).wait(1).to({y:8.6,alpha:0.88},0).wait(1).to({y:7.8,alpha:0.903},0).wait(1).to({y:7.2,alpha:0.922},0).wait(1).to({y:6.8,alpha:0.938},0).wait(1).to({y:6.3,alpha:0.952},0).wait(1).to({y:6,alpha:0.963},0).wait(1).to({y:5.7,alpha:0.972},0).wait(1).to({y:5.5,alpha:0.98},0).wait(1).to({y:5.3,alpha:0.986},0).wait(1).to({y:5.1,alpha:0.992},0).wait(1).to({y:5,alpha:0.996},0).wait(1).to({regY:10,y:4.9,alpha:1},0).to({y:10.4},5).wait(10));
 
-	// Символ 10
-	this.instance_2 = new lib.Символ10();
+	// wertвол 10
+	this.instance_2 = new lib.wertвол10();
 	this.instance_2.setTransform(38.5,35.5,1,1,0,0,0,9.7,10.2);
 	this.instance_2.alpha = 0;
 	this.instance_2._off = true;
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(6).to({_off:false},0).wait(1).to({regY:10.3,y:28.8,alpha:0.222},0).wait(1).to({y:23.6,alpha:0.391},0).wait(1).to({y:19.8,alpha:0.514},0).wait(1).to({y:17,alpha:0.604},0).wait(1).to({y:14.8,alpha:0.674},0).wait(1).to({y:13.1,alpha:0.731},0).wait(1).to({y:11.6,alpha:0.779},0).wait(1).to({y:10.4,alpha:0.819},0).wait(1).to({y:9.4,alpha:0.852},0).wait(1).to({y:8.6,alpha:0.88},0).wait(1).to({y:7.8,alpha:0.903},0).wait(1).to({y:7.2,alpha:0.922},0).wait(1).to({y:6.8,alpha:0.938},0).wait(1).to({y:6.3,alpha:0.952},0).wait(1).to({y:6,alpha:0.963},0).wait(1).to({y:5.7,alpha:0.972},0).wait(1).to({y:5.5,alpha:0.98},0).wait(1).to({y:5.3,alpha:0.986},0).wait(1).to({y:5.1,alpha:0.992},0).wait(1).to({y:5,alpha:0.996},0).wait(1).to({regY:10.2,y:4.7,alpha:1},0).to({y:10.2},5).wait(13));
 
-	// Символ 9
-	this.instance_3 = new lib.Символ9();
+	// wertвол 9
+	this.instance_3 = new lib.wertвол9();
 	this.instance_3.setTransform(23.1,35.5,1,1,0,0,0,2.8,9.8);
 	this.instance_3.alpha = 0;
 	this.instance_3._off = true;
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(3).to({_off:false},0).wait(1).to({regY:9.9,y:28.8,alpha:0.222},0).wait(1).to({y:23.6,alpha:0.391},0).wait(1).to({y:19.8,alpha:0.514},0).wait(1).to({y:17,alpha:0.604},0).wait(1).to({y:14.8,alpha:0.674},0).wait(1).to({y:13.1,alpha:0.731},0).wait(1).to({y:11.6,alpha:0.779},0).wait(1).to({y:10.4,alpha:0.819},0).wait(1).to({y:9.4,alpha:0.852},0).wait(1).to({y:8.6,alpha:0.88},0).wait(1).to({y:7.8,alpha:0.903},0).wait(1).to({y:7.2,alpha:0.922},0).wait(1).to({y:6.8,alpha:0.938},0).wait(1).to({y:6.3,alpha:0.952},0).wait(1).to({y:6,alpha:0.963},0).wait(1).to({y:5.7,alpha:0.972},0).wait(1).to({y:5.5,alpha:0.98},0).wait(1).to({y:5.3,alpha:0.986},0).wait(1).to({y:5.1,alpha:0.992},0).wait(1).to({y:5,alpha:0.996},0).wait(1).to({regY:9.8,y:4.7,alpha:1},0).to({y:10.2},5).wait(16));
 
-	// Символ 8
-	this.instance_4 = new lib.Символ8();
+	// wertвол 8
+	this.instance_4 = new lib.wertвол8();
 	this.instance_4.setTransform(8.8,35.5,1,1,0,0,0,8.8,9.8);
 	this.instance_4.alpha = 0;
 
@@ -316,46 +299,46 @@ p.nominalBounds = null;
 p.nominalBounds = new cjs.Rectangle(0,25.7,17.7,19.8);
 
 
-(lib.Символ4 = function(mode,startPosition,loop) {
+(lib.wertвол4 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
-	// Символ 7
-	this.instance = new lib.Символ7();
+	// wertвол 7
+	this.instance = new lib.wertвол7();
 	this.instance.setTransform(209.9,223,1,0.056,0,0,0,2.8,59.4);
 	this.instance._off = true;
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(70).to({_off:false},0).wait(1).to({regY:50,scaleY:0.27,y:207.6},0).wait(1).to({scaleY:0.42,y:197.6},0).wait(1).to({scaleY:0.52,y:190.4},0).wait(1).to({scaleY:0.6,y:184.8},0).wait(1).to({scaleY:0.67,y:180.1},0).wait(1).to({scaleY:0.73,y:176.2},0).wait(1).to({scaleY:0.78,y:172.7},0).wait(1).to({scaleY:0.82,y:169.8},0).wait(1).to({scaleY:0.86,y:167.3},0).wait(1).to({scaleY:0.89,y:165.3},0).wait(1).to({scaleY:0.91,y:163.5},0).wait(1).to({scaleY:0.93,y:162.1},0).wait(1).to({scaleY:0.95,y:160.9},0).wait(1).to({scaleY:0.97,y:159.8},0).wait(1).to({scaleY:0.98,y:158.9},0).wait(1).to({scaleY:0.99,y:158.2},0).wait(1).to({regY:59.4,scaleY:1,y:166.9},0).wait(23).to({regY:50,scaleY:0.98,y:158.6},0).wait(1).to({scaleY:0.96,y:160.3},0).wait(1).to({scaleY:0.92,y:162.9},0).wait(1).to({scaleY:0.86,y:166.9},0).wait(1).to({scaleY:0.78,y:172.8},0).wait(1).to({scaleY:0.67,y:180.3},0).wait(1).to({scaleY:0.52,y:190.5},0).wait(1).to({scaleY:0.3,y:205.7},0).wait(1).to({regY:59.3,scaleY:0.02,y:224.9},0).to({_off:true},1).wait(36));
 
-	// Символ 6
-	this.instance_1 = new lib.Символ6();
+	// wertвол 6
+	this.instance_1 = new lib.wertвол6();
 	this.instance_1.setTransform(199.5,223.9,1,0.056,0,0,0,2.8,43.2);
 	this.instance_1._off = true;
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(66).to({_off:false},0).wait(1).to({regY:43.6,scaleY:0.27,y:214.6},0).wait(1).to({scaleY:0.42,y:208.3},0).wait(1).to({scaleY:0.52,y:203.7},0).wait(1).to({scaleY:0.6,y:200.2},0).wait(1).to({scaleY:0.67,y:197.3},0).wait(1).to({scaleY:0.73,y:194.8},0).wait(1).to({scaleY:0.78,y:192.7},0).wait(1).to({scaleY:0.82,y:190.8},0).wait(1).to({scaleY:0.86,y:189.2},0).wait(1).to({scaleY:0.89,y:187.9},0).wait(1).to({scaleY:0.91,y:186.9},0).wait(1).to({scaleY:0.93,y:186},0).wait(1).to({scaleY:0.95,y:185.2},0).wait(1).to({scaleY:0.97,y:184.6},0).wait(1).to({scaleY:0.98,y:184},0).wait(1).to({scaleY:0.99,y:183.5},0).wait(1).to({scaleY:1,y:182.7},0).wait(31).to({scaleY:0.98,y:183.4},0).wait(1).to({scaleY:0.96,y:184.5},0).wait(1).to({scaleY:0.92,y:186.2},0).wait(1).to({scaleY:0.86,y:188.7},0).wait(1).to({scaleY:0.78,y:192.4},0).wait(1).to({scaleY:0.67,y:197.2},0).wait(1).to({scaleY:0.52,y:203.7},0).wait(1).to({scaleY:0.3,y:213.2},0).wait(1).to({regY:42.4,scaleY:0.02,y:225.2},0).to({_off:true},1).wait(32));
 
-	// Символ 5
-	this.instance_2 = new lib.Символ5();
+	// wertвол 5
+	this.instance_2 = new lib.wertвол5();
 	this.instance_2.setTransform(188.3,224.6,1,0.056,0,0,0,2.8,30.6);
 	this.instance_2._off = true;
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(62).to({_off:false},0).wait(1).to({regY:30.3,scaleY:0.27,y:218},0).wait(1).to({scaleY:0.42,y:213.6},0).wait(1).to({scaleY:0.52,y:210.3},0).wait(1).to({scaleY:0.6,y:207.8},0).wait(1).to({scaleY:0.67,y:205.8},0).wait(1).to({scaleY:0.73,y:204},0).wait(1).to({scaleY:0.78,y:202.5},0).wait(1).to({scaleY:0.82,y:201.1},0).wait(1).to({scaleY:0.86,y:200},0).wait(1).to({scaleY:0.89,y:199.1},0).wait(1).to({scaleY:0.91,y:198.3},0).wait(1).to({scaleY:0.93,y:197.7},0).wait(1).to({scaleY:0.95,y:197.2},0).wait(1).to({scaleY:0.97,y:196.7},0).wait(1).to({scaleY:0.98,y:196.3},0).wait(1).to({scaleY:0.99,y:196},0).wait(1).to({regY:30.2,scaleY:1,y:195.9},0).wait(38).to({regY:30.3,scaleY:0.98,y:196.5},0).wait(1).to({scaleY:0.96,y:197.3},0).wait(1).to({scaleY:0.92,y:198.4},0).wait(1).to({scaleY:0.86,y:200.2},0).wait(1).to({scaleY:0.78,y:202.7},0).wait(1).to({scaleY:0.67,y:206.1},0).wait(1).to({scaleY:0.52,y:210.6},0).wait(1).to({scaleY:0.3,y:217.2},0).wait(1).to({regY:31.8,scaleY:0.02,y:225.6},0).to({_off:true},1).wait(29));
 
-	// Символ 3
-	this.instance_3 = new lib.Символ3();
+	// wertвол 3
+	this.instance_3 = new lib.wertвол3();
 	this.instance_3.setTransform(175.7,97.8,1,1,0,0,0,59.1,10.2);
 	this.instance_3._off = true;
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(18).to({_off:false},0).wait(92).to({regX:59.2,regY:20.2,x:175.8,y:107.8,alpha:0.976},0).wait(1).to({alpha:0.942},0).wait(1).to({alpha:0.894},0).wait(1).to({alpha:0.825},0).wait(1).to({alpha:0.733},0).wait(1).to({alpha:0.622},0).wait(1).to({alpha:0.486},0).wait(1).to({alpha:0.285},0).wait(1).to({regX:59.1,regY:10.2,x:175.7,y:97.8,alpha:0},0).to({_off:true},1).wait(36));
 
-	// Символ 2
-	this.instance_4 = new lib.Символ2();
+	// wertвол 2
+	this.instance_4 = new lib.wertвол2();
 	this.instance_4.setTransform(83,181.5,1,1,0,0,0,83,78.5);
 	this.instance_4.alpha = 0;
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_4).to({alpha:1},29).wait(81).to({alpha:0.979},0).wait(1).to({alpha:0.95},0).wait(1).to({alpha:0.91},0).wait(1).to({alpha:0.855},0).wait(1).to({alpha:0.782},0).wait(1).to({alpha:0.69},0).wait(1).to({alpha:0.585},0).wait(1).to({alpha:0.452},0).wait(1).to({alpha:0.26},0).wait(1).to({alpha:0},0).to({_off:true},1).wait(35));
 
-	// Символ 1
-	this.instance_5 = new lib.Символ1();
+	// wertвол 1
+	this.instance_5 = new lib.wertвол1();
 	this.instance_5.setTransform(128.1,41.8,1,1,0,0,0,114,41.8);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(118).to({y:68.3},0).wait(1).to({y:82.9},0).wait(1).to({y:91.8},0).wait(1).to({y:98.2},0).wait(1).to({y:103.8},0).wait(1).to({y:108.7},0).wait(1).to({y:112.9},0).wait(1).to({y:116.4},0).wait(1).to({y:119.3},0).wait(1).to({y:121.7},0).wait(1).to({y:123.7},0).wait(1).to({y:125.4},0).wait(1).to({y:126.8},0).wait(1).to({y:128},0).wait(1).to({y:129},0).wait(1).to({y:129.8},0).to({alpha:0},11).to({_off:true},1).wait(10));
@@ -375,20 +358,20 @@ p.nominalBounds = new cjs.Rectangle(0,0,242,260);
 	this.frame_0 = function() {
 		var bodyStyle = document.body.style;
 		bodyStyle.margin = 0;
-		bodyStyle.padding = 0
+		bodyStyle.padding = 0;
 	}
 
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
 	// Слой 6
-	this.instance = new lib.Символ4();
-	this.instance.setTransform(103.4,110.9,0.846,0.846,0,0,0,121,129.9);
+	this.instance = new lib.wertвол4();
+	this.instance.setTransform(122,131,1,1,0,0,0,121,130);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(105,111.5,204.8,220);
+p.nominalBounds = new cjs.Rectangle(123.5,132,242,260);
 
 })(lib = lib||{}, images = images||{}, createjs = createjs||{}, ss = ss||{});
 var lib, images, createjs, ss;

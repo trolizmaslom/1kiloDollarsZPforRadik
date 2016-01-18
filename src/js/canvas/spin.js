@@ -3,23 +3,7 @@
 var p; // shortcut to reference prototypes
 
 // library properties:
-lib.properties = {
-	width: 215,
-	height: 235,
-	fps: 35,
-	color: "#C70000",
-	manifest: [
-		{src:"images/button.png", id:"button"},
-		{src:"images/comp_bottom.png", id:"comp_bottom"},
-		{src:"images/finger.png", id:"finger"},
-		{src:"images/lines.png", id:"lines"},
-		{src:"images/lines2.png", id:"lines2"},
-		{src:"images/screen.png", id:"screen"},
-		{src:"images/slot.png", id:"slot"},
-		{src:"images/square.png", id:"square"},
-		{src:"images/square2.png", id:"square2"}
-	]
-};
+
 
 
 
@@ -514,7 +498,7 @@ p.nominalBounds = new cjs.Rectangle(-125.1,43.5,250,40);
 	this.frame_0 = function() {
 		var bodyStyle = document.body.style;
 		bodyStyle.margin = 0;
-		bodyStyle.padding = 0
+		bodyStyle.padding = 0;
 	}
 
 	// actions tween:
@@ -522,12 +506,12 @@ p.nominalBounds = new cjs.Rectangle(-125.1,43.5,250,40);
 
 	// Режим изоляции
 	this.instance = new lib.Символ6();
-	this.instance.setTransform(108.1,122.3,0.839,0.839);
+	this.instance.setTransform(128.2,145);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(110.7,181.9,209.8,128);
+p.nominalBounds = new cjs.Rectangle(131.1,215.5,250,152.5);
 
 })(lib = lib||{}, images = images||{}, createjs = createjs||{}, ss = ss||{});
 var lib, images, createjs, ss;
