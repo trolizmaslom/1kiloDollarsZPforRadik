@@ -5,7 +5,6 @@ var trollSlider = {
         arrows:true
     },
      actualDot: function(){
-        console.log('hop');
         $('#dots button').removeClass('actual')
         var i = $('.active-slide').attr('data-dot');
         $('#dots button[data-dot='+i+']').addClass('actual');
@@ -53,8 +52,8 @@ var trollSlider = {
     },
     clickDot: function(object){
         var define = object.attr('data-dot') - $('.active-slide').attr('data-dot');
-        if (define<0){ console.log(define); for (var i = 0; i<Math.abs(define); i++) {trollSlider.prevSlide();}};
-        if(define>0){console.log(define);for (var i = 0; i<define; i++) {trollSlider.nextSlide();}};
+        if (define<0){for (var i = 0; i<Math.abs(define); i++) {trollSlider.prevSlide();}};
+        if(define>0){for (var i = 0; i<define; i++) {trollSlider.nextSlide();}};
     },
     nextSlide: function (){
              $('.one-slide').each(function() {
