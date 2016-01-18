@@ -12,19 +12,49 @@
 }
 @media screen and (max-width: 1024px){
 
+    .proposition-wrap .conteiner{padding-top: 200px;
+        .title-proposition { font-size: 72px;padding-bottom: 43px;}
+        .under-block { text-align: center;
+            .convert-item { display: inline-block;width: 23%;
+                .undertext {color: white;}
+                .item-canvas { margin-bottom: 65px;}
+            }
+            .convert-item:nth-child(2) { margin-right: 10.75%; margin-left: 10.75%;}
+        }
+        .button-promote .button-text {color: rgba(255, 255, 255, 1);}
+    }
+
 }
 @media screen and (max-width: 992px){
 
 }
-@media screen and (max-width: 767px){
-
+@media screen and (max-width: 840px){
+    .proposition-wrap .conteiner .under-block .convert-item .undertext {font-size: 22px;}
 }
-@media screen and (max-width: 666px){
-
+@media screen and (max-width: 640px){
+    .proposition-wrap { position: relative;overflow: hidden;
+        &:after{content: ''; position: absolute; top: 0; left: 0; right: 0; width: 0;height: 0;border-style: solid;border-width: 51px 640px 0 0;border-color: #0e0e0e transparent transparent transparent; }
+        .conteiner{ padding-top: 125px;padding-bottom: 157px;
+            .title-proposition {padding-bottom: 86px;}
+            .under-block {margin-bottom: 35px;
+                .convert-item {padding-bottom: 100px;
+                    &:last-child{padding-bottom: 50px;}
+                }
+                .convert-item .item-canvas {margin-bottom: 0;}
+                .convert-item .undertext { font-size: 25px;}
+                .convert-item:nth-child(1), .convert-item:nth-child(2),.convert-item:nth-child(3) {display: block; max-width: 270px; margin: 0 auto; width: 100%;}
+            }
+            .button-promote {max-width: 356px; border: 2px solid white; border-radius: 3px;background-color: rgba(158, 32, 33, 0);
+                &:hover{ border: 2px solid rgba(0, 0, 0,0.8); }
+                .button-text {padding: 21px;}
+            }
+        }
+    }
 }
 @media screen and (max-width: 479px){
-
+    .proposition-wrap .conteiner .title-proposition {font-size: 64px;}
 }
 @media screen and (max-width: 320px){
 
 }
+
