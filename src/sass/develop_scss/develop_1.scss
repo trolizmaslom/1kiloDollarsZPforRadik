@@ -23,7 +23,7 @@
 
 /* header */
 
-    .header{color:#fff;
+    .header{color:#fff;position: relative;z-index: 2;
         .mbox{padding-top: 5px;padding-bottom: 5px;max-width: none;}
         a{text-decoration: none;color:#fff;}
         .header-main{padding: 0 60px 0 30px;}
@@ -76,3 +76,12 @@
     }
 
 /* /header */
+
+/* footer */
+
+    .footer{background-color: #161616;padding: 35px 0 35px 0;text-align: center;
+        .footer-conect{display: none;}
+        .footer-text{font-size: 14px;text-transform:uppercase;color:#6f6f6f;font-weight: 500;}
+    }
+
+/* /footer */

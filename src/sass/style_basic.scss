@@ -26,9 +26,7 @@ img{vertical-align:bottom;border:0;max-width:100%;}
 
 /* /wraps styling*/
 
-
-.footer_placeholder{height: 200px;}
-.footer{position:absolute;bottom:0;left:0;width:100%;z-index:2;overflow:hidden;}
+.footer{overflow:hidden;}
 
 ::-webkit-input-placeholder {color:#212121;}
 :-moz-placeholder {color:#212121;}
@@ -43,4 +41,7 @@ img{vertical-align:bottom;border:0;max-width:100%;}
 
 @media screen and (max-width: 640px){
     .mbox{padding:0 20px;}
+}
+@media screen and (max-width: 479px){
+    .mbox{padding: 0 10px;}
 }
