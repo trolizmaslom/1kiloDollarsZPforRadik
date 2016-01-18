@@ -143,6 +143,16 @@ body{
 
 /* /top-block */
 
+/* steampank-lady */
+
+.steampank-lady{background-color:#0e0e0e;}
+
+.steampank-lady-text{position: absolute;right: 0;top:0;
+    text{fill:url(#light);}
+}
+
+/* /steampank-lady */
+
 /* animations */
 
     @keyframes arrowAnim{
