@@ -34,6 +34,21 @@ function oneHeightItems(){
 
     oneHeight($('.oneHeight'));
 }
+function oneHeightItems2(){
+
+    function oneHeight(block){
+        var height=0;
+        block.removeAttr('style');
+        block.each(function(){
+            if($(this).height()>height){
+                height=$(this).height();
+            }
+        });
+        block.css('height', height);
+    }
+
+    oneHeight($('.oneHeight2'));
+}
 
 /*scroll animation*/
 function animationBlock(item){
@@ -95,6 +110,7 @@ function cutText(){
 /* DOCUMENT READY  */
 $(document).ready(function() {
     oneHeightItems();
+    oneHeightItems2();
     $('.footer_placeholder').height($('.footer').outerHeight());
 
     //goTo();
@@ -103,5 +119,6 @@ $(document).ready(function() {
 
 $(window).resize(function() {
     oneHeightItems();
+    oneHeightItems2();
     $('.footer_placeholder').height($('.footer').outerHeight());
 });

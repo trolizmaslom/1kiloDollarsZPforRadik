@@ -20,17 +20,22 @@ canvas{width: 100%;}
     }
 }
 
-.conteiner-about{ background-color: #0e0e0e;
-    .title-about{font-size: 47px; font-family: "BebasNeue"; color: rgba(255, 255, 255, 0.769); font-weight: 700; text-transform: uppercase; line-height: 1.2; margin: 0 auto; text-align: center;}
+.conteiner-about{ background-color: #0e0e0e; padding-bottom: 110px;
+    .mbox-support{max-width: 1480px; width: 100%; margin: 0 auto;}
+    .title-about{font-size: 80px; font-family: "BebasNeue"; color: rgba(255, 255, 255, 0.769); font-weight: 700; text-transform: uppercase; line-height: 1.2; margin: 0 auto; text-align: center;    padding-bottom: 12px;}
     .about-wrap{ background-image: url(../images/stena.jpg); background-position: center center; background-size: 100%;
-        .subtitle{font-size: 35px;font-family: "Roboto";color: rgb(255, 255, 255);text-transform: uppercase;line-height: 1.2; text-align: center;
+        .subtitle{font-size: 35px;font-family: "Roboto";color: rgb(255, 255, 255);text-transform: uppercase;line-height: 1.2; text-align: center;padding-bottom: 34px;
             span{color: #ffff62;text-shadow: 1px 1px 4px #ff9b09, -1px -1px 4px #ff9b09, 1px -1px 4px #ff9b09, -1px 1px 4px #ff9b09, 0px 5px 5px #ff9b09; }
         }
-        .content-bock{
-            .item{display: inline-block; width: 30%;
-                .canvas-block{ }
+        .content-bock{ vertical-align: top;
+            .item{display: inline-block; width: 30%; vertical-align: middle;
+                .canvas-block{ width: 100%; margin-bottom: 20px;}
                 .subtext{ text-align: center;}
+                &:nth-child(1){width: 21%;margin-left: 4%;}
+                &:nth-child(2){width: 29%; margin-left: 10.5%;  margin-right: 3%;}
+                &:nth-child(3){width: 29%;}
             }
+
         }
     }
 }
