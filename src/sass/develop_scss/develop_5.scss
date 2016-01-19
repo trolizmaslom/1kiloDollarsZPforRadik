@@ -67,8 +67,9 @@
         }
     }
     #arrows{position: absolute; bottom: -197px; z-index: 8888;     left: 50%;    transform: translateX(-50%); }
-    .slider-arrows{width: 113px; height: 77px; background-color: #fff; position: relative; border:none;
+    .slider-arrows{width: 113px; height: 77px; background-color: #fff; position: relative; border:3px solid #fff;
         &:before{border-right: 17px solid #202020; border-top:11px solid transparent; border-bottom: 11px solid transparent; content: ''; display: block; left :calc(50% - 14px); position: absolute; box-shadow: none; top: 29px;}
+        &:active{border:3px solid #ccc;}
     }
     .next-slide{
         &:before{border-right: none; border-left: 17px solid #202020;  left :calc(50% - 6px);}
