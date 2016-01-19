@@ -8,13 +8,18 @@ function inputFocus(){
         }
     });
 }
+function topPreload(){
+    $('.wrapper').removeClass('lock');
+    console.log('remove lock');
+}
 
 $(document).ready(function(){
     inputFocus();
+    topPreload();
 });
 
 $(window).load(function(){
-
+    topPreload();
 });
 
 $(window).resize(function(){

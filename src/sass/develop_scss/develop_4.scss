@@ -72,7 +72,7 @@
         .clients-center-top{}
         .clients-center-bottom{background: url('../images/clients-center-bottom.png') center bottom no-repeat;min-height: 149px;margin-right: -21px;}
     }
-    .clients-title{font-size: 74px;text-transform: uppercase;color: white;position: absolute;font-family: 'BebasNeue';font-weight: bold;left: 50%;transform: translate(-50%,0) rotate(-4.4deg);bottom: -126px;z-index: 3;
+    .clients-title{font-size: 74px;text-transform: uppercase;color: white;position: absolute;font-family: 'BebasNeue';font-weight: bold;left: 50%;transform: translate(-50%,0) rotate(-4.4deg);bottom: -126px;z-index: 3;line-height: 89px;
         &:after{content: '';position: absolute;width: 100%;top: 40px;left: 0;height: 2px;    background-color: rgba(22, 22, 22, 0.75);pointer-events:none;}
     }
     .clients-row-superwrap{padding: 70px 0px 0px;max-width: 914px;margin: 0 auto;}
