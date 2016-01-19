@@ -19,6 +19,9 @@
     }
 
     /*clients*/
+    .wrapper.eng .clients .clients-title{bottom: -27px;}
+
+
     .clients{min-height: 700px;margin-bottom: -164px;
         .clients-red{min-height: 376px;margin-bottom: -75px;
             &:after{height: 113%;background-image: url(../images/clients-top-mobile.png);background-position: 0px bottom;bottom: 0px;right: auto;left: 86px;}
@@ -41,6 +44,10 @@
 }
 @media screen and (max-width: 960px){
     /*clients*/
+    .wrapper.eng .clients .clients-title{bottom: -24px;font-size: 64px;
+        &:after{top: 46px;}
+    }
+
     .clients{min-height: 650px;margin-bottom: -237px;
         .clients-red{min-height: 320px;margin-bottom: -81px;
             &:after{height: 113%;background-image: url(../images/clients-top-mobile.png);background-position: 0px bottom;bottom: 3px;right: auto;left: 63px;background-size: contain;background-size: 90%;width: 100%;}
