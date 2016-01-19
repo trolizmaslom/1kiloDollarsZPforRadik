@@ -41,6 +41,7 @@
     .proposition-wrap .conteiner .under-block .convert-item .undertext {font-size: 22px;}
 }
 @media screen and (max-width: 640px){
+
     .proposition-wrap { position: relative;overflow: hidden;
         &:after{content: ''; position: absolute; top: 0; left: 0; right: 0; width: 0;height: 0;border-style: solid;border-width: 51px 640px 0 0;border-color: #0e0e0e transparent transparent transparent; }
         .conteiner{ padding-top: 125px;padding-bottom: 157px;
@@ -61,6 +62,7 @@
     }
 
     .conteiner-about { padding-top: 134px;
+        .seciton-convert{padding-bottom: 0;}
         .title-about {padding-bottom: 0px;}
         .about-wrap {background-image: none;
             .subtitle {padding-bottom: 46px;}
