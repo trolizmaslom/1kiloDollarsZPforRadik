@@ -121,7 +121,10 @@ $(document).ready(function() {
     oneHeightItems();
     oneHeightItems2();
     $('.footer_placeholder').height($('.footer').outerHeight());
-
+    scrollUp($('.header-menu-main ul li a[href="#about-us"]'),$('#about-us'));
+    scrollUp($('.header-menu-main ul li a[href="#clients"]'),$('#clients'));
+    scrollUp($('.header-menu-main ul li a[href="#slider"]'),$('#slider'));
+    scrollUp($('.header-menu-main ul li a[href="#contact-form"]'),$('#contact-form'));
     //goTo();
     //animationBlock($('.setion-animate'));
 });
