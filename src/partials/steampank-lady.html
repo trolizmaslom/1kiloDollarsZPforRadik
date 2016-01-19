@@ -1,22 +1,79 @@
 <section class="steampank-lady">
     <div class="mbox">
 
-        <svg class="patterns">
+        <svg width="0" height="0" class="svg-defs-for-steampunk">
             <defs>
-                <pattern id="light" patternUnits="userSpaceOnUse" width="300" height="300" viewBox="0 0 199 300">
-                    <image xlink:href="http://img-fotki.yandex.ru/get/5607/5091629.6b/0_612e6_b9039c0d_M.jpg" width="199" height="300"></image>
-                </pattern>
+
+                <clipPath id="cliping">
+                    <text x="10" y="30">мы вносим лучший игровой опыт</text>
+                    <text x="0" y="110" class="bigger-text">в продвижении</text>
+                    <text x="150" y="200" class="bigger-text">азартных игр</text>
+                    <text x="385" y="240">для достижения</text>
+                    <text x="280" y="290">лучших результатов</text>
+                </clipPath>
+
+                <clipPath id="clipingMobile">
+                    <text x="110" y="30">МЫ ВНОСИМ ЛУЧШИЙ</text>
+                    <text x="165" y="70">ИГРОВОЙ ОПЫТ</text>
+                    <text x="35" y="130" class="bigger-text">в продвижении</text>
+                    <text x="80" y="190" class="bigger-text">азартных игр</text>
+                    <text x="70" y="230">для достижения лучших</text>
+                    <text x="190" y="270">результатов</text>
+                </clipPath>
+
+                <radialGradient id="gradient" cx="50%" cy="10%" r="50%" fx="50%" fy="0%">
+                    <stop offset="0%" stop-color="rgba(224,166,75,1)">
+                        <animate attributeName="stop-color" values="rgba(224,166,75,1);rgba(178,43,40,1);rgba(224,166,75,1);" dur="3s" repeatCount="indefinite" />
+                    </stop>
+                    <stop offset="100%" style="stop-color:rgb(178,43,40);" />
+                </radialGradient>
+
+                <radialGradient id="gradientMobile" cx="50%" cy="30%" r="50%" fx="60%" fy="0%">
+                    <stop offset="0%" stop-color="rgba(224,166,75,1)">
+                        <animate attributeName="stop-color" values="rgba(224,166,75,1);rgba(178,43,40,1);rgba(224,166,75,1);" dur="3s" repeatCount="indefinite" />
+                    </stop>
+                    <stop offset="100%" style="stop-color:rgb(178,43,40);" />
+                </radialGradient>
+
             </defs>
         </svg>
 
-        <div class="steampank-lady-img">
-            <img src="images/steampank-lady-img-svg.png" alt="" />
-        </div>
+        <div class="desktop-girl">
+            <div class="steampank-lady-img">
+                <img src="images/steampank-lady-img-svg.png" alt="" />
+            </div>
 
-        <div class="steampank-lady-text">
-            <svg width="300" height="300">
-                <text x="0" y="0">мы вносим лучший игровой опыт</text>
-            </svg>
+            <div class="steampank-lady-text">
+                <svg width="840" height="300" viewbox="0 0 840 300">
+
+                    <rect width="840" height="300"></rect>
+                    <g class="mask-for-cliping">
+                        <text x="10" y="30">мы вносим лучший игровой опыт</text>
+                        <text x="0" y="110" class="bigger-text">в п<tspan>р</tspan>о<tspan>д</tspan>ви<tspan>ж</tspan>ении</text>
+                        <text x="150" y="200" class="bigger-text"><tspan>а</tspan>з<tspan>а</tspan>р<tspan>т</tspan>ных и<tspan>г</tspan>р</text>
+                        <text x="385" y="240">для достижения</text>
+                        <text x="280" y="290">лучших результатов</text>
+                    </g>
+
+                </svg>
+            </div>
+        </div>
+        <div class="mobile-girl">
+            <div class="steampank-lady-text">
+                <svg width="600" height="300" viewbox="0 0 600 300">
+
+                    <rect width="600" height="300"></rect>
+                    <g class="mask-for-cliping">
+                        <text x="110" y="30">МЫ ВНОСИМ ЛУЧШИЙ</text>
+                        <text x="165" y="70">ИГРОВОЙ ОПЫТ</text>
+                        <text x="35" y="130" class="bigger-text">в п<tspan>р</tspan>о<tspan>д</tspan>вижении</text>
+                        <text x="80" y="190" class="bigger-text"><tspan>а</tspan>з<tspan>а</tspan>р<tspan>т</tspan>ных и<tspan>г</tspan>р</text>
+                        <text x="70" y="230">для достижения лучших</text>
+                        <text x="190" y="270">результатов</text>
+                    </g>
+
+                </svg>
+            </div>
         </div>
 
     </div>
