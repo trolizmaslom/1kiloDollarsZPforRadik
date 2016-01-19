@@ -9,7 +9,8 @@ function inputFocus(){
     });
 }
 function topPreload(){
-    console.log('load');
+    $('.wrapper').removeClass('lock');
+    console.log('remove lock');
 }
 
 $(document).ready(function(){
