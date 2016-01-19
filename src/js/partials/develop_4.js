@@ -8,13 +8,17 @@ function inputFocus(){
         }
     });
 }
+function topPreload(){
+    console.log('load');
+}
 
 $(document).ready(function(){
     inputFocus();
+    topPreload();
 });
 
 $(window).load(function(){
-
+    topPreload();
 });
 
 $(window).resize(function(){
