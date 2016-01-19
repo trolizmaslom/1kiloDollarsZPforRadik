@@ -32,23 +32,21 @@
             }
         }
     }
-    .one-slide[data-slide="0"]{left: -100%;}
-    .active-slide{ z-index: 100; opacity: 1;
+    .one-slide[data-slide="0"]{.image{width: 0;  height: 0; left:-400px; opacity: 0;bottom: 0; }}
+    .active-slide{
         .text{left:764px; display: block!important;}
-        .image{width: 764px;  height: 468px; }
+        .image{width: 764px;  height: 468px; z-index: 100; opacity: 1; left:0;  bottom: 0;}
     }
-    .second{  bottom: -22px; z-index: 80;  opacity: 0.75; left: 689px;
-        .image{width: 347px;  height: 213px; border-width: 3px; }
-        .text{left:347px;}
+    .second{
+        .image{width: 347px;  height: 213px; border-width: 3px; bottom: -277px; z-index: 80;  opacity: 0.75; left: 689px; }
      }
-    .third{ bottom: -31px; z-index: 60; opacity: 0.5;     left: 939px;
-        .image{width: 314px;  height: 193px; border-width: 3px;}
-        .text{left:314px;}
+    .third{
+        .image{width: 314px;  height: 193px; border-width: 3px;  bottom: -306px; z-index: 60; opacity: 0.5;     left: 939px; }
     }
-    .unactive-slide{opacity:0; z-index: -1;}
+    .unactive-slide{.image{opacity:0; z-index: -1;}}
     #dots{ position: absolute; bottom: -73px;
         li{float:left; margin-right: 12px;
-            button{ width:99px; height: 60px; opacity:0.5; border: 3px solid #e0e0e0; background-size: cover; background-position: center center;
+            button{ width:99px; height: 60px; cursor: pointer; opacity:0.5; border: 3px solid #e0e0e0; background-size: cover; background-position: center center;
 
                 &.actual{opacity: 1;}
             }
@@ -63,3 +61,37 @@
     }
     .prev-slide{ margin-right: 77px;}
 /*END troll-slider*/
+/*slider-animation*/
+    @keyframes animateActiveSlidePrev {
+        0%   {  width: 764px;  height: 468px; left:0; opacity: 1;bottom: 0;}
+        100% { width: 347px;  height: 213px; opacity: 0.75; left: 689px; bottom: -277px;}
+    }
+    @keyframes animateZeroSlidePrev {
+        0%   {  width: 0;  height: 0; left:-400px; opacity: 0;bottom: 0;}
+        100% { width: 764px;  height: 468px; left:0; opacity: 1;bottom: 0;}
+    }
+    @keyframes animateSecondSlidePrev {
+        0%   {  width: 347px;  height: 213px; opacity: 0.75; left: 689px; bottom: -277px;}
+        100% { width: 314px;  height: 193px; bottom: -306px;  opacity: 0.5;     left: 939px; }
+    }
+    @keyframes animateThirdSlidePrev {
+        0%   {  width: 314px;  height: 193px;  opacity: 0.5;  bottom: -306px;    left: 939px;}
+        100% { width: 0;  height: 0;  opacity: 0;  bottom: -306px;    left: 1300px; }
+    }
+    @keyframes animateActiveSlideNext {
+        0%   {  width: 764px;  height: 468px; left:0; opacity: 1;bottom: 0;}
+        100% {  width: 0;  height: 0; left:-400px; opacity: 0;bottom: 0;}
+    }
+    @keyframes animateFourSlideNext {
+        0%   { width: 0;  height: 0;  opacity: 0;  bottom: -306px;    left: 1300px; }
+        100% {  width: 314px;  height: 193px;  opacity: 0.5;  bottom: -306px;    left: 939px;}
+    }
+    @keyframes animateSecondSlideNext {
+        0%   {  width: 347px;  height: 213px; opacity: 0.75; left: 689px; bottom: -277px;}
+        100% {  width: 764px;  height: 468px; left:0; opacity: 1;bottom: 0; }
+    }
+    @keyframes animateThirdSlideNext {
+        0%   {  width: 314px;  height: 193px;  opacity: 0.5;  bottom: -306px;    left: 939px;}
+        100% { width: 347px;  height: 213px; opacity: 0.75; left: 689px; bottom: -277px; }
+    }
+/*END slider-animation*/

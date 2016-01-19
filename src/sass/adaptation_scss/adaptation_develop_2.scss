@@ -24,6 +24,15 @@
         .button-promote .button-text {color: rgba(255, 255, 255, 1);}
     }
 
+    .conteiner-about { padding-top: 150px;
+        .about-wrap{background-size: 140%;
+            .subtitle { padding-bottom: 45px;}
+            .content-bock .item:nth-child(1) {width: 23%;}
+            .content-bock .item:nth-child(2) {margin-left: 8.5%;}
+            .content-bock .item .subtext img {max-width: 75%;}
+        }
+    }
+
 }
 @media screen and (max-width: 992px){
 
@@ -50,9 +59,25 @@
             }
         }
     }
+
+    .conteiner-about { padding-top: 134px;
+        .title-about {padding-bottom: 0px;}
+        .about-wrap {background-image: none;
+            .subtitle {padding-bottom: 46px;}
+            .content-bock .item:nth-child(n) {display: block; width: 100%; margin: 0 auto; max-width: 508px; background-image: url(../images/small-bg.png); background-size: 100%;  background-repeat: no-repeat;    margin-bottom: 73px;
+                .canvas-block{width: 62%; margin: 0 auto;}
+            }
+            .content-bock .item:nth-child(2) .canvas-block { width: 84%;}
+            .content-bock .item:nth-child(3) .canvas-block { width: 74%;}
+            .content-bock .item:nth-child(3) .subtext {margin-top: -110px;}
+            .content-bock .item .subtext {margin-top: -16px;}
+        }
+    }
+
 }
 @media screen and (max-width: 479px){
     .proposition-wrap .conteiner .title-proposition {font-size: 64px;}
+    .conteiner-about .about-wrap .content-bock .item:nth-child(3) .subtext { margin-top: -70px;}
 }
 @media screen and (max-width: 320px){
 
