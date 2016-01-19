@@ -173,7 +173,7 @@ body{
             .letter-shadow{stroke-width:1px;stroke:#000;text-shadow: 0 0 10px #000;}
         }
     }
-    rect{clip-path:url(#cliping);fill:url(#gradient);}
+    rect{fill:url(#gradient);}
 }
 
 .mobile-girl{
@@ -183,7 +183,7 @@ body{
                 .bigger-text{font-size: 60px;letter-spacing: -6px;}
             }
         }
-        rect{clip-path:url(#clipingMobile);fill:url(#gradientMobile);}
+        rect{fill:url(#gradientMobile);}
     }
 }
 
@@ -199,6 +199,14 @@ body{
         .mask-for-cliping{
             text{font-family:'Futuremoon', sans-serif;font-size: 78px;text-transform: lowercase;letter-spacing:1px;
                 .bigger-text{font-size: 83px;text-transform: uppercase;font-weight: 400;letter-spacing:2px;}
+            }
+        }
+    }
+    .svg-defs-for-steampunk{
+        #clipingMobile{
+            text{font-size: 55px;letter-spacing:1px;
+                .bigger-text{font-size: 60px;letter-spacing: 1px;}
+                .more-bigger-text{font-size: 75px;text-transform: uppercase;}
             }
         }
     }
