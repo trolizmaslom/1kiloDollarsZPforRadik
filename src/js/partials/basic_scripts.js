@@ -108,11 +108,6 @@ function cutText(){
 };
 
 
-/* Scroll Reveal*/
-window.sr = ScrollReveal({
-    reset: true,
-});
-sr.reveal('.scroll-anim');
 
 
 
@@ -128,6 +123,17 @@ $(document).ready(function() {
     scrollUp($('.top-block-scroll-button a'),$('#about-us'));
     //goTo();
     //animationBlock($('.setion-animate'));
+});
+
+$(window).load(function(){
+
+    /* Scroll Reveal*/
+    window.sr = ScrollReveal({
+        reset: true
+    });
+    sr.reveal('.scroll-anim');
+
+
 });
 
 $(window).resize(function() {
