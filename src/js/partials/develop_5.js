@@ -60,10 +60,10 @@ var trollSlider = {
     nextSlide: function (){
             if(!trollSlider.settings.triger){
                 trollSlider.settings.triger = true;
-                $('.active-slide .image').attr("style", "animation : animateActiveSlideNext "+trollSlider.settings.animateDuration+" linear;");
-                $('.second .image').attr("style", "animation : animateSecondSlideNext "+trollSlider.settings.animateDuration+" linear;");
-                $('.third .image').attr("style", "animation : animateThirdSlideNext "+trollSlider.settings.animateDuration+" linear;");
-                $('.one-slide[data-slide="4"] .image').attr("style", "animation : animateFourSlideNext "+trollSlider.settings.animateDuration+" linear;");
+                $('.active-slide .image').attr("style", "animation : animateActiveSlideNext "+trollSlider.settings.animateDuration+" linear; -webkit-animation : animateActiveSlideNext "+trollSlider.settings.animateDuration+" linear; -moz-animation : animateActiveSlideNext "+trollSlider.settings.animateDuration+" linear; -o-animation : animateActiveSlideNext "+trollSlider.settings.animateDuration+" linear;");
+                $('.second .image').attr("style", "animation : animateSecondSlideNext "+trollSlider.settings.animateDuration+" linear; -webkit-animation : animateSecondSlideNext "+trollSlider.settings.animateDuration+" linear; -moz-animation : animateSecondSlideNext "+trollSlider.settings.animateDuration+" linear; -o-animation : animateSecondSlideNext "+trollSlider.settings.animateDuration+" linear;");
+                $('.third .image').attr("style", "animation : animateThirdSlideNext "+trollSlider.settings.animateDuration+" linear; -webkit-animation : animateThirdSlideNext "+trollSlider.settings.animateDuration+" linear; -moz-animation : animateThirdSlideNext "+trollSlider.settings.animateDuration+" linear; -o-animation : animateThirdSlideNext "+trollSlider.settings.animateDuration+" linear;");
+                $('.one-slide[data-slide="4"] .image').attr("style", "animation : animateFourSlideNext "+trollSlider.settings.animateDuration+" linear; -webkit-animation : animateFourSlideNext "+trollSlider.settings.animateDuration+" linear; -moz-animation : animateFourSlideNext "+trollSlider.settings.animateDuration+" linear; -o-animation : animateFourSlideNext "+trollSlider.settings.animateDuration+" linear;");
                 $('.one-slide[data-slide="0"] .image').removeAttr("style");
                  $('.one-slide').each(function() {
                     var x = $(this).attr('data-slide');
@@ -84,10 +84,10 @@ var trollSlider = {
      prevSlide: function(){
          if(!trollSlider.settings.triger){
                 trollSlider.settings.triger = true;
-                $('.active-slide .image').attr("style", "animation : animateActiveSlidePrev "+trollSlider.settings.animateDuration+" linear;");
-                $('.second .image').attr("style", "animation : animateSecondSlidePrev "+trollSlider.settings.animateDuration+" linear;");
-                $('.third .image').attr("style", "animation : animateThirdSlidePrev "+trollSlider.settings.animateDuration+" linear;");
-                $('.one-slide[data-slide="0"] .image').attr("style", "animation : animateZeroSlidePrev "+trollSlider.settings.animateDuration+" linear;");
+                $('.active-slide .image').attr("style", "animation : animateActiveSlidePrev "+trollSlider.settings.animateDuration+" linear; -webkit-animation : animateActiveSlidePrev "+trollSlider.settings.animateDuration+" linear; -moz-animation : animateActiveSlidePrev "+trollSlider.settings.animateDuration+" linear; -o-animation : animateActiveSlidePrev "+trollSlider.settings.animateDuration+" linear;");
+                $('.second .image').attr("style", "animation : animateSecondSlidePrev "+trollSlider.settings.animateDuration+" linear; -webkit-animation : animateSecondSlidePrev "+trollSlider.settings.animateDuration+" linear; -moz-animation : animateSecondSlidePrev "+trollSlider.settings.animateDuration+" linear; -o-animation : animateSecondSlidePrev "+trollSlider.settings.animateDuration+" linear;");
+                $('.third .image').attr("style", "animation : animateThirdSlidePrev "+trollSlider.settings.animateDuration+" linear; -webkit-animation : animateThirdSlidePrev "+trollSlider.settings.animateDuration+" linear; -moz-animation : animateThirdSlidePrev "+trollSlider.settings.animateDuration+" linear; -o-animation : animateThirdSlidePrev "+trollSlider.settings.animateDuration+" linear;");
+                $('.one-slide[data-slide="0"] .image').attr("style", "animation : animateZeroSlidePrev "+trollSlider.settings.animateDuration+" linear; -webkit-animation : animateZeroSlidePrev "+trollSlider.settings.animateDuration+" linear; -moz-animation : animateZeroSlidePrev "+trollSlider.settings.animateDuration+" linear; -o-animation : animateZeroSlidePrev "+trollSlider.settings.animateDuration+" linear;");
                 $('.one-slide[data-slide="4"] .image').removeAttr("style");
                  $('.one-slide').each(function() {
                     var x = $(this).attr('data-slide');
