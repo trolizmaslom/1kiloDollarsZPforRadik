@@ -108,11 +108,6 @@ function cutText(){
 };
 
 
-/* Scroll Reveal*/
-window.sr = ScrollReveal({
-    reset: true,
-});
-sr.reveal('.scroll-anim');
 
 
 
@@ -121,9 +116,24 @@ $(document).ready(function() {
     oneHeightItems();
     oneHeightItems2();
     $('.footer_placeholder').height($('.footer').outerHeight());
-
+    scrollUp($('.header-menu-main ul li a[href="#about-us"]'),$('#about-us'));
+    scrollUp($('.header-menu-main ul li a[href="#clients"]'),$('#clients'));
+    scrollUp($('.header-menu-main ul li a[href="#slider"]'),$('#slider'));
+    scrollUp($('.header-menu-main ul li a[href="#contact-form"]'),$('#contact-form'));
+    scrollUp($('.top-block-scroll-button a'),$('#about-us'));
     //goTo();
     //animationBlock($('.setion-animate'));
+});
+
+$(window).load(function(){
+
+    /* Scroll Reveal*/
+    window.sr = ScrollReveal({
+        reset: true
+    });
+    sr.reveal('.scroll-anim');
+
+
 });
 
 $(window).resize(function() {
