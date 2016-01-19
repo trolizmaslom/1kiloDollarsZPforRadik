@@ -7,7 +7,7 @@
 
 /*contact-form*/
 .wrapper.eng .contact-form .contact-form-title {font-family: 'Futuremoon';}
-.contact-form{background-image: -moz-linear-gradient( 180deg, rgb(111,31,31) 0%, rgb(156,44,44) 50%, rgb(111,31,31) 100%);background-image: -webkit-linear-gradient( 180deg, rgb(111,31,31) 0%, rgb(156,44,44) 50%, rgb(111,31,31) 100%);background-image: -ms-linear-gradient( 180deg, rgb(111,31,31) 0%, rgb(156,44,44) 50%, rgb(111,31,31) 100%);position: relative;text-align: center;margin-top: -145px;
+.contact-form{background-image: -moz-linear-gradient(180deg, #811919 0%, #B62828 50%, #811919 100%);background-image: -webkit-linear-gradient(180deg, #811919 0%, #B62828 50%, #811919 100%);background-image: -ms-linear-gradient(180deg, #811919 0%, #B62828 50%, #811919 100%);position: relative;text-align: center;margin-top: -145px;
     .mbox{}
     .contact-form-image{position: absolute;bottom: 20px;
         &.right{right: 10px;}
@@ -51,5 +51,25 @@
         .contact-form-item-img{width: 100%;display: inline-block;min-height: 78px;padding-bottom: 27px;transition: .3s -webkit-filter ease-out;transition: .3s -moz-filter ease-out;
             transition: .3s filter ease-out;transition: .3s all ease-out;}
         .contact-form-item-title{transition: .3s all ease-out;}
+    }
+}
+
+/*clients*/
+.clients{min-height: 700px;overflow: hidden;
+    .clients-red{min-height: 438px;background-image: -webkit-linear-gradient(180deg, #811919 0%, #b62828 50%, #811919 100%);background-image: -moz-linear-gradient(180deg, #811919 0%, #B62828 50%, #811919 100%);position: relative;
+        &:after{content: '';width: 100%;height: 113%;background-image: url(../images/clients-top.png);background-position: center bottom;position: absolute;bottom: -120px;right: -44px;background-repeat: no-repeat;z-index: 2;}
+    }
+    .clients-grey{min-height: 562px;background: url('../images/clients-grey.jpg') center center no-repeat;margin-right: 1px;position: relative;
+        &:after{content: '';position: absolute;height: 100%;width: 1px;background-color: #161616;right: -1px;top: 0;}
+    }
+    .clients-center{background-image: -webkit-linear-gradient(180deg, #811919 0%, #b62828 50%, #811919 100%);background-image: -moz-linear-gradient(180deg, #811919 0%, #B62828 50%, #811919 100%);position: relative;z-index: 0;
+        .clients-center-top{}
+        .clients-center-bottom{background: url('../images/clients-center-bottom.png') center bottom no-repeat;min-height: 149px;margin-right: -21px;}
+    }
+    .clients-title{font-size: 74px;text-transform: uppercase;color: white;position: absolute;font-family: 'BebasNeue';font-weight: bold;left: 50%;transform: translate(-50%,0) rotate(-4.4deg);bottom: -126px;z-index: 3;
+        &:after{content: '';position: absolute;width: 100%;top: 40px;left: 0;height: 2px;    background-color: rgba(22, 22, 22, 0.75);pointer-events:none;}
+    }
+    .clients-row{
+        .clients-item{float: left;width: 33.33%;}
     }
 }
