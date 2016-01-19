@@ -104,6 +104,7 @@ var trollSlider = {
                  trollSlider.settings.triger=false;
              }
     }
+
 }
 $(document).ready(function(){
     trollSlider.init($('.troll-slider'));
