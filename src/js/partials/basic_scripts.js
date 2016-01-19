@@ -121,6 +121,7 @@ $(document).ready(function() {
     scrollUp($('.header-menu-main ul li a[href="#slider"]'),$('#slider'));
     scrollUp($('.header-menu-main ul li a[href="#contact-form"]'),$('#contact-form'));
     scrollUp($('.top-block-scroll-button a'),$('#about-us'));
+    scrollUp($('.button-promote'),$('#contact-form'));
     //goTo();
     //animationBlock($('.setion-animate'));
 });
