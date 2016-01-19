@@ -2,7 +2,9 @@ var trollSlider = {
     settings : {
         showItems : 3,
         dots:true,
-        arrows:true
+        arrows:true,
+        triger:false,
+        animateDuration: '500ms'
     },
      actualDot: function(){
         $('#dots button').removeClass('actual')
@@ -56,33 +58,51 @@ var trollSlider = {
         if(define>0){for (var i = 0; i<define; i++) {trollSlider.nextSlide();}};
     },
     nextSlide: function (){
-             $('.one-slide').each(function() {
-                var x = $(this).attr('data-slide');
-                x--;
-                $(this).attr({ 'data-slide': x });
-            });
+            if(!trollSlider.settings.triger){
+                trollSlider.settings.triger = true;
+                $('.active-slide .image').attr("style", "animation : animateActiveSlideNext "+trollSlider.settings.animateDuration+" linear;");
+                $('.second .image').attr("style", "animation : animateSecondSlideNext "+trollSlider.settings.animateDuration+" linear;");
+                $('.third .image').attr("style", "animation : animateThirdSlideNext "+trollSlider.settings.animateDuration+" linear;");
+                $('.one-slide[data-slide="4"] .image').attr("style", "animation : animateFourSlideNext "+trollSlider.settings.animateDuration+" linear;");
+                $('.one-slide[data-slide="0"] .image').removeAttr("style");
+                 $('.one-slide').each(function() {
+                    var x = $(this).attr('data-slide');
+                    x--;
+                    $(this).attr({ 'data-slide': x });
+                });
 
-             var numItems = $('.one-slide').length-1;
-             var slide = $('.one-slide[data-slide=-1]');
-             $('.one-slide[data-slide=-1]').remove();
-             slide.attr('data-slide', numItems );
-             $('.troll-slider').append(slide);
-             trollSlider.indexSlide();
-             trollSlider.actualDot();
+                 var numItems = $('.one-slide').length-1;
+                 var slide = $('.one-slide[data-slide=-1]');
+                 $('.one-slide[data-slide=-1]').remove();
+                 slide.attr('data-slide', numItems );
+                 $('.troll-slider').append(slide);
+                 trollSlider.indexSlide();
+                 trollSlider.actualDot();
+                 trollSlider.settings.triger=false;
+             }
     },
      prevSlide: function(){
-             $('.one-slide').each(function() {
-                var x = $(this).attr('data-slide');
-                x++;
-                $(this).attr({ 'data-slide': x });
-            });
-             var numItems = $('.one-slide').length;
-             var slide = $('.one-slide:last-child');
-             $('.one-slide:last-child').remove();
-             slide.attr('data-slide', 0 );
-             $('.troll-slider').prepend(slide);
-             trollSlider.indexSlide();
-             trollSlider.actualDot();
+         if(!trollSlider.settings.triger){
+                trollSlider.settings.triger = true;
+                $('.active-slide .image').attr("style", "animation : animateActiveSlidePrev "+trollSlider.settings.animateDuration+" linear;");
+                $('.second .image').attr("style", "animation : animateSecondSlidePrev "+trollSlider.settings.animateDuration+" linear;");
+                $('.third .image').attr("style", "animation : animateThirdSlidePrev "+trollSlider.settings.animateDuration+" linear;");
+                $('.one-slide[data-slide="0"] .image').attr("style", "animation : animateZeroSlidePrev "+trollSlider.settings.animateDuration+" linear;");
+                $('.one-slide[data-slide="4"] .image').removeAttr("style");
+                 $('.one-slide').each(function() {
+                    var x = $(this).attr('data-slide');
+                    x++;
+                    $(this).attr({ 'data-slide': x });
+                });
+                 var numItems = $('.one-slide').length;
+                 var slide = $('.one-slide:last-child');
+                 $('.one-slide:last-child').remove();
+                 slide.attr('data-slide', 0 );
+                 $('.troll-slider').prepend(slide);
+                 trollSlider.indexSlide();
+                 trollSlider.actualDot();
+                 trollSlider.settings.triger=false;
+             }
     }
 }
 $(document).ready(function(){
