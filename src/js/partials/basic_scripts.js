@@ -107,6 +107,13 @@ function cutText(){
     });
 };
 
+
+/* Scroll Reveal*/
+window.sr = ScrollReveal({ reset: true });
+sr.reveal('.scroll-anim');
+
+
+
 /* DOCUMENT READY  */
 $(document).ready(function() {
     oneHeightItems();
