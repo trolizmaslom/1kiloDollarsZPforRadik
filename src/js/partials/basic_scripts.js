@@ -125,6 +125,7 @@ $(document).ready(function() {
     scrollUp($('.header-menu-main ul li a[href="#clients"]'),$('#clients'));
     scrollUp($('.header-menu-main ul li a[href="#slider"]'),$('#slider'));
     scrollUp($('.header-menu-main ul li a[href="#contact-form"]'),$('#contact-form'));
+    scrollUp($('.top-block-scroll-button a'),$('#about-us'));
     //goTo();
     //animationBlock($('.setion-animate'));
 });
