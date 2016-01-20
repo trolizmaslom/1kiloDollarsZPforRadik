@@ -1,8 +1,8 @@
 /*wrapper eng*/
 .wrapper.eng {
-    .contact-form .contact-form-title {font-family: 'Futuremoon';}
-    .clients .clients-title{font-family: 'Futuremoon';font-weight: normal;bottom: -137px;opacity: 0.8;letter-spacing: 5px;line-height: 114px;
-        &:after{width: 101%;top: 55px;left: -3px;height: 2px;}
+    .contact-form .contact-form-title {letter-spacing: 2px;}
+    .clients .clients-title{letter-spacing: 2px;line-height: 104px;bottom: -131px;
+        &:after{width: 101%;top: 50px;left: -3px;height: 2px;}
     }
 }
 

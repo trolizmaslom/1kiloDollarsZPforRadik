@@ -6,10 +6,17 @@
 //= partials/plagins/jquery.fancybox.js
 //= partials/plagins/jquery.fancybox.pack.js
 //= partials/plagins/jquery.formstyler.min.js
+//= partials/plagins/scrollreveal.min.js
 
 /* /plagins */
 
 /* canvas */
+
+//= canvas/easeljs-0.8.1.min.js
+//= canvas/tweenjs-0.6.1.min.js
+//= canvas/movieclip-0.8.1.min.js
+//= canvas/preloadjs-0.6.1.min.js
+
 
 //= canvas/spin.js
 //= canvas/web.js
