@@ -2,7 +2,7 @@
   jQuery.fn.trollSlider = function(options){
 
         var start = function(){
-                trollSlider.init($('.troll-slider'));
+                trollSlider.init($(this));
                 $('#next-slide').on('click', function(){
                     trollSlider.nextSlide();
                 });
