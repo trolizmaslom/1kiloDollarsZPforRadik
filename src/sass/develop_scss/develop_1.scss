@@ -189,24 +189,34 @@ body{
 
 .eng{
     .svg-defs-for-steampunk{
-        #cliping, #clipingMobile{
-            text{font-family:'Futuremoon', sans-serif;font-size: 78px;text-transform: lowercase;letter-spacing:1px;
-                .bigger-text{font-size: 83px;text-transform: uppercase;font-weight: 400;letter-spacing:2px;}
+        #cliping{
+            text{font-size: 35px;
+                .bigger-text{font-size: 80px;}
             }
         }
     }
     .steampank-lady-text{right: 10px;
         .mask-for-cliping{
-            text{font-family:'Futuremoon', sans-serif;font-size: 78px;text-transform: lowercase;letter-spacing:1px;
-                .bigger-text{font-size: 83px;text-transform: uppercase;font-weight: 400;letter-spacing:2px;}
+            text{font-size: 35px;
+                .bigger-text{font-size: 80px;}
             }
         }
     }
     .svg-defs-for-steampunk{
         #clipingMobile{
-            text{font-size: 55px;letter-spacing:1px;
-                .bigger-text{font-size: 60px;letter-spacing: 1px;}
-                .more-bigger-text{font-size: 75px;text-transform: uppercase;}
+            text{font-size: 55px;
+                .bigger-text{font-size: 60px;}
+                .more-bigger-text{font-size: 75px;font-weight: 700;letter-spacing: -9px;}
+            }
+        }
+    }
+    .mobile-girl{
+        .steampank-lady-text{
+            .mask-for-cliping{
+                text{font-size: 55px;
+                    .bigger-text{font-size: 60px;}
+                    .more-bigger-text{font-size: 75px;font-weight: 700;letter-spacing: -9px;}
+                }
             }
         }
     }
