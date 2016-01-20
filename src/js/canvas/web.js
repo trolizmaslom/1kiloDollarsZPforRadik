@@ -3,6 +3,9 @@
 var p; // shortcut to reference prototypes
 
 // library properties:
+
+lib.properties = properties_loc;
+/*
 lib.properties = {
 	fps: 35,
 	color: "#BB0000",
@@ -53,7 +56,7 @@ lib.properties = {
 	]
 };
 
-
+*/
 
 // symbols:
 
