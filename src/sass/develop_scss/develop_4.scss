@@ -56,7 +56,7 @@
         a{text-decoration: none;display: inline-block;font-size: 18px;color: white;}
         .contact-form-item-img{width: 100%;display: inline-block;min-height: 78px;padding-bottom: 27px;transition: .3s -webkit-filter ease-out;transition: .3s -moz-filter ease-out;
             transition: .3s filter ease-out;transition: .3s all ease-out;}
-        .contact-form-item-title{transition: .3s all ease-out;}
+        .contact-form-item-title{transition: .3s all ease-out;padding: 0 10px;word-break: break-word;}
     }
 }
 
