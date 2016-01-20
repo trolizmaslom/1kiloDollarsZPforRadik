@@ -1,16 +1,40 @@
 var canvas, stage, exportRoot, exportRoot2;
 
 function init() {
+    var doc = $('html').attr('lang');
+
+    if (doc=='ru'){
+       canvas5 = document.getElementById("header_ru");
+    }
+    else{
+        canvas4 = document.getElementById("header_en");
+    }
     canvas = document.getElementById("spin");
+    canvas2 = document.getElementById("web");
+    canvas3 = document.getElementById("identety");
+    canvas6 = document.getElementById("cards");
+    canvas7 = document.getElementById("clock");
+    canvas8 = document.getElementById("guaranteed");
     images = images||{};
 
+
     var loader = new createjs.LoadQueue(false);
+    if (doc=='ru'){
+       loader.addEventListener("complete", handleComplete5);
+    }
+    else{
+        loader.addEventListener("complete", handleComplete4);
+    }
     loader.addEventListener("fileload", handleFileLoad);
     loader.addEventListener("complete", handleComplete);
+    loader.addEventListener("complete", handleComplete2);
+    loader.addEventListener("complete", handleComplete3);
+    loader.addEventListener("complete", handleComplete6);
+    loader.addEventListener("complete", handleComplete7);
+    loader.addEventListener("complete", handleComplete8);
     loader.loadManifest(lib.properties.manifest);
-
-     console.log(lib.properties);
 }
+
 function handleFileLoad(evt) {
     if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
 }
@@ -25,18 +49,6 @@ function handleComplete(evt) {
     createjs.Ticker.addEventListener("tick", stage);
 }
 
-
-
-function init2() {
-    canvas2 = document.getElementById("web");
-    images = images||{};
-
-    var loader = new createjs.LoadQueue(false);
-    loader.addEventListener("fileload", handleFileLoad2);
-    loader.addEventListener("complete", handleComplete2);
-    loader.loadManifest(lib.properties.manifest);
-}
-
 function handleComplete2(evt) {
     exportRoot2 = new lib.web();
 
@@ -46,26 +58,6 @@ function handleComplete2(evt) {
 
     createjs.Ticker.setFPS(lib.properties.fps);
     createjs.Ticker.addEventListener("tick", stage);
-
-    console.log(lib);
-}
-function handleFileLoad2(evt) {
-    if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
-}
-
-
-function init3() {
-    canvas3 = document.getElementById("identety");
-    images = images||{};
-
-    var loader = new createjs.LoadQueue(false);
-    loader.addEventListener("fileload", handleFileLoad3);
-    loader.addEventListener("complete", handleComplete3);
-    loader.loadManifest(lib.properties.manifest);
-}
-
-function handleFileLoad3(evt) {
-    if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
 }
 
 function handleComplete3(evt) {
@@ -79,20 +71,6 @@ function handleComplete3(evt) {
     createjs.Ticker.addEventListener("tick", stage);
 }
 
-function init4() {
-    canvas4 = document.getElementById("header_en");
-    images = images||{};
-
-    var loader = new createjs.LoadQueue(false);
-    loader.addEventListener("fileload", handleFileLoad4);
-    loader.addEventListener("complete", handleComplete4);
-    loader.loadManifest(lib.properties.manifest);
-}
-
-function handleFileLoad4(evt) {
-    if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
-}
-
 function handleComplete4(evt) {
     exportRoot = new lib.header_en();
 
@@ -102,20 +80,6 @@ function handleComplete4(evt) {
 
     createjs.Ticker.setFPS(lib.properties.fps);
     createjs.Ticker.addEventListener("tick", stage);
-}
-
-function init5() {
-    canvas5 = document.getElementById("header_ru");
-    images = images||{};
-
-    var loader = new createjs.LoadQueue(false);
-    loader.addEventListener("fileload", handleFileLoad5);
-    loader.addEventListener("complete", handleComplete5);
-    loader.loadManifest(lib.properties.manifest);
-}
-
-function handleFileLoad5(evt) {
-    if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
 }
 
 function handleComplete5(evt) {
@@ -129,21 +93,6 @@ function handleComplete5(evt) {
     createjs.Ticker.addEventListener("tick", stage);
 }
 
-
-function init6() {
-    canvas6 = document.getElementById("cards");
-    images = images||{};
-
-    var loader = new createjs.LoadQueue(false);
-    loader.addEventListener("fileload", handleFileLoad6);
-    loader.addEventListener("complete", handleComplete6);
-    loader.loadManifest(lib.properties.manifest);
-}
-
-function handleFileLoad6(evt) {
-    if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
-}
-
 function handleComplete6(evt) {
     exportRoot = new lib.cards();
 
@@ -155,20 +104,6 @@ function handleComplete6(evt) {
     createjs.Ticker.addEventListener("tick", stage);
 }
 
-function init7() {
-    canvas7 = document.getElementById("clock");
-    images = images||{};
-
-    var loader = new createjs.LoadQueue(false);
-    loader.addEventListener("fileload", handleFileLoad7);
-    loader.addEventListener("complete", handleComplete7);
-    loader.loadManifest(lib.properties.manifest);
-}
-
-function handleFileLoad7(evt) {
-    if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
-}
-
 function handleComplete7(evt) {
     exportRoot = new lib.clock();
 
@@ -178,21 +113,6 @@ function handleComplete7(evt) {
 
     createjs.Ticker.setFPS(lib.properties.fps);
     createjs.Ticker.addEventListener("tick", stage);
-}
-
-
-function init8() {
-    canvas8 = document.getElementById("guaranteed");
-    images = images||{};
-
-    var loader = new createjs.LoadQueue(false);
-    loader.addEventListener("fileload", handleFileLoad8);
-    loader.addEventListener("complete", handleComplete8);
-    loader.loadManifest(lib.properties.manifest);
-}
-
-function handleFileLoad8(evt) {
-    if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
 }
 
 function handleComplete8(evt) {
@@ -209,13 +129,6 @@ function handleComplete8(evt) {
 
 $(document).ready(function(){
     init();
-    init2();
-    init3();
-    init4();
-    init5();
-    init6();
-    init7();
-    init8();
 });
 
 $(window).load(function(){

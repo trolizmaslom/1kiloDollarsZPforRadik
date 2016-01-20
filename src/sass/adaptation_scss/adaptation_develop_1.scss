@@ -20,6 +20,14 @@
 
     /* /header */
 
+    /* steampunk girl */
+
+        .eng{
+            .steampank-lady-text{top: 105px;}
+        }
+
+    /* /steampunk girl */
+
 }
 @media screen and (max-width: 1024px){
 
@@ -45,6 +53,9 @@
     /* steampank-lady */
 
         .steampank-lady-text{top: 95px;}
+        .eng{
+            .steampank-lady-text{top: 25px;}
+        }
 
     /* /steampank-lady */
 
@@ -76,7 +87,7 @@
 
         .steampank-lady-text{top: 55px;}
         .eng{
-            .steampank-lady-text{top: 0;}
+            .steampank-lady-text{top: -20px;}
         }
 
     /* /steampank-lady */
