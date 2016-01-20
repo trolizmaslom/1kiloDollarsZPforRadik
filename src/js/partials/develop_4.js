@@ -15,11 +15,11 @@ function topPreload(){
 
 $(document).ready(function(){
     inputFocus();
-    topPreload();
+    //topPreload();
 });
 
 $(window).load(function(){
-    topPreload();
+    //topPreload();
 });
 
 $(window).resize(function(){
