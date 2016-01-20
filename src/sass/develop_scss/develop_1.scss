@@ -155,12 +155,12 @@ body{
 .svg-defs-for-steampunk{
     #cliping, #clipingMobile{
         text{font-family: 'ag futura', sans-serif;font-size: 40px;text-transform: uppercase;letter-spacing: -1.5px;
-            .bigger-text{font-size: 90px;font-weight: 700;letter-spacing: -9px;}
+            .bigger-text{font-size: 85px;font-weight: 700;letter-spacing: -5px;}
         }
     }
     #clipingMobile{
         text{font-size: 35px;
-            .bigger-text{font-size: 60px;letter-spacing: -6px;}
+            .bigger-text{font-size: 60px;letter-spacing: -4px;}
         }
     }
 }
@@ -191,22 +191,22 @@ body{
     .svg-defs-for-steampunk{
         #cliping{
             text{font-size: 35px;
-                .bigger-text{font-size: 80px;}
+                .bigger-text{font-size: 78px;}
             }
         }
     }
     .steampank-lady-text{right: 10px;
         .mask-for-cliping{
             text{font-size: 35px;
-                .bigger-text{font-size: 80px;}
+                .bigger-text{font-size: 78px;}
             }
         }
     }
     .svg-defs-for-steampunk{
         #clipingMobile{
             text{font-size: 55px;
-                .bigger-text{font-size: 60px;}
-                .more-bigger-text{font-size: 75px;font-weight: 700;letter-spacing: -9px;}
+                .bigger-text{font-size: 60px;letter-spacing:-5px;}
+                .more-bigger-text{font-size: 75px;font-weight: 700;letter-spacing: -5px;}
             }
         }
     }
