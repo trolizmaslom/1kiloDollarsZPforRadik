@@ -7,12 +7,12 @@ jQuery.browser.msie = /msie/.test(navigator.userAgent.toLowerCase());
 var scroller=jQuery.browser.webkit ? "body": "html";
 
 /* scrollUp */
-function scrollUp(block,targetBlock) {
+function scrollUp(block,targetBlock, callback) {
 
     $(block).click(function(e){
         var target = $(targetBlock).offset().top;
 
-        $(scroller).animate({scrollTop:target},800);
+        $(scroller).animate({scrollTop:target},800, callback());
         return false;
 
         e.preventDefault();
@@ -108,7 +108,11 @@ function cutText(){
 };
 
 
+function afterScrool(){
+    console.log('s');
+    $('.header-menu-sendwich-wrap').click();
 
+};
 
 
 /* DOCUMENT READY  */
@@ -116,10 +120,10 @@ $(document).ready(function() {
     oneHeightItems();
     oneHeightItems2();
     $('.footer_placeholder').height($('.footer').outerHeight());
-    scrollUp($('.header-menu-main ul li a[href="#about-us"]'),$('#about-us'));
-    scrollUp($('.header-menu-main ul li a[href="#clients"]'),$('#clients'));
-    scrollUp($('.header-menu-main ul li a[href="#slider"]'),$('#slider'));
-    scrollUp($('.header-menu-main ul li a[href="#contact-form"]'),$('#contact-form'));
+    scrollUp($('.header-menu-main ul li a[href="#about-us"]'),$('#about-us'), afterScrool);
+    scrollUp($('.header-menu-main ul li a[href="#clients"]'),$('#clients'), afterScrool);
+    scrollUp($('.header-menu-main ul li a[href="#slider"]'),$('#slider'), afterScrool);
+    scrollUp($('.header-menu-main ul li a[href="#contact-form"]'), $('#contact-form'), afterScrool);
     scrollUp($('.top-block-scroll-button a'),$('#about-us'));
     scrollUp($('.button-promote'),$('#contact-form'));
     //goTo();
