@@ -1,6 +1,5 @@
 $(document).ready(function(){
     $('.troll-slider').trollSlider();
-
 });
 $(window).load(function(){
 });
