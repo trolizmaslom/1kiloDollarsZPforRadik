@@ -66,11 +66,13 @@
             img{max-width: 70%;}
         }
     }
-
+    .contact-form .contact-form-bottoms .contact-form-item-title{font-size: 17px;}
 }
 @media screen and (max-width: 767px){
     /*clients*/
     .clients{display: none;}
+
+    .contact-form .contact-form-bottoms .contact-form-item-title{font-size: 13px;}
 }
 @media screen and (max-width: 640px){
     /*contact-form*/
@@ -89,6 +91,7 @@
         .contact-form-bottoms{display: none;}
         .contact-submit{max-width: 279px;font-size: 27px;padding: 24px 0px;background-color: #932023;}
     }
+
 }
 @media screen and (max-width: 479px){
     /*contact-form*/
