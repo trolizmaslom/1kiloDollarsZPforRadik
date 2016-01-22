@@ -55,7 +55,12 @@
                 .convert-item:nth-child(1), .convert-item:nth-child(2),.convert-item:nth-child(3) {display: block; max-width: 270px; margin: 0 auto; width: 100%;}
             }
             .button-promote {max-width: 356px; border: 2px solid white; border-radius: 3px;background-color: rgba(158, 32, 33, 0);
-                &:hover{ border: 2px solid rgba(0, 0, 0,0.8); }
+                &:hover{ border: 2px solid rgba(0, 0, 0,0.8);
+                    .button-text{color: rgba(0, 0, 0,0.8); }
+                }
+                &:active{position: relative;top: 2px;border: 2px solid rgba(0, 0, 0,0.8);
+                     .button-text{color: rgba(0, 0, 0,0.8); }
+                }
                 .button-text {padding: 21px;}
             }
         }

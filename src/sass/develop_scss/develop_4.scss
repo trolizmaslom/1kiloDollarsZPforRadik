@@ -39,7 +39,7 @@
         }
         input,textarea{width: 100%;border:none;border-bottom: 1px solid #872526;padding: 5px 0px;background-color: transparent;resize:none;font-size: 14px;max-height: 28px;overflow: hidden;}
     }
-    .contact-submit{max-width: 185px;width: 100%;background-color: #832425;border-radius: 2px;font-size: 18px;text-transform: uppercase;border:1px solid transparent;border-bottom: 1px solid #741e1f;padding: 14px 0px;color: white;cursor: pointer;transition:all ease-out .3s;margin:0 auto;
+    .contact-submit{max-width: 185px;width: 100%;background-color: #9D2021;border-radius: 3px;font-size: 18px;text-transform: uppercase;border:1px solid transparent;border-bottom: 1px solid #741e1f;padding: 14px 0px;color: white;cursor: pointer;transition:all ease-out .3s;margin:0 auto;background-image: url(../images/contact-submit-bg.png);background-repeat: no-repeat;background-position: center center;
         &:hover{background-color:#962224;}
         &:active{border-bottom: 1px solid transparent;border-top:1px solid #581A1B;background-color: #6D2122;
             span{position: relative;top: 2px;}
