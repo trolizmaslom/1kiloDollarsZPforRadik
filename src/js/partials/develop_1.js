@@ -30,6 +30,34 @@ function sedwichMenu(){
 
 };
 
+function changeViewport(){
+
+    $(window).resize(function(){
+
+        whatViewport();
+
+    });
+
+    function whatViewport(){
+
+
+
+        var windowWidth = $(window).width();
+        var viewport = document.querySelector("meta[name=viewport]");
+
+        if(windowWidth>640){
+            viewport.setAttribute('content', 'width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0');
+        }
+        else{
+            viewport.setAttribute('content', 'width=640,  user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0');
+        }
+
+    };
+
+    whatViewport();
+    
+}
+
 $(document).ready(function(){
 
     sedwichMenu();
@@ -37,6 +65,8 @@ $(document).ready(function(){
 });
 
 $(window).load(function(){
+
+    //changeViewport();
 
 });
 
