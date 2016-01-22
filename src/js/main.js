@@ -1,6 +1,5 @@
 /* plagins */
 
-//= partials/plagins/jquery.mobile-1.4.5.min.js
 //= partials/plagins/maskInput.js
 //= partials/plagins/device.js
 //= partials/plagins/jquery.validate.min.js
