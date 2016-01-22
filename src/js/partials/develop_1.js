@@ -40,22 +40,15 @@ function changeViewport(){
 
     function whatViewport(){
 
-
-
-        var windowWidth = $(window).width();
-        var viewport = document.querySelector("meta[name=viewport]");
-
-        if(windowWidth>640){
-            viewport.setAttribute('content', 'width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0');
-        }
-        else{
-            viewport.setAttribute('content', 'width=640,  user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0');
+        var windowWidth = screen.width;
+        var viewport = $("meta[name=viewport]");
+        viewport.attr('content', 'width=device-width');
+        if(windowWidth<=640){
+            viewport.attr('content', 'width=640');
         }
 
     };
 
-    whatViewport();
-    
 }
 
 $(document).ready(function(){
@@ -66,7 +59,7 @@ $(document).ready(function(){
 
 $(window).load(function(){
 
-    //changeViewport();
+    changeViewport();
 
 });
 
