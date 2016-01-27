@@ -70,16 +70,20 @@
 }
 @media screen and (max-width: 767px){
     /*clients*/
-    .clients{display: none;}
-
+    .clients {
+        .clients-title {font-size: 58px;bottom: -27px;
+            &:after{display: none;}
+        }
+        .clients-red:after{left: 51px;}
+    }
     .contact-form .contact-form-bottoms .contact-form-item-title{font-size: 13px;}
 }
 @media screen and (max-width: 640px){
     /*contact-form*/
-    .contact-form{background: url('../images/contact-form-mobile-bg.jpg') center center no-repeat;background-size: cover;margin-top: 0;
+    .contact-form{/*background: url('../images/contact-form-mobile-bg.jpg') center center no-repeat;background-size: cover;*/margin-top: 0;padding-top: 90px;
         .contact-form-title .contact-form-title-top{color: white;}
         .contact-form-title{line-height: 62px;}
-        .contact-form-wrap{padding-top: 190px;padding-bottom: 55px;}
+        .contact-form-wrap{padding-top: 0px;padding-bottom: 55px;}
         .contact-form-image{display: none;}
         .contact-form-bottom{padding: 101px 20px 0px;max-width: 430px;
             input,textarea{border-color: #fff;font-size: 24px;color: white;max-height: 100%;}
@@ -87,11 +91,28 @@
                 &:nth-child(3){margin-bottom: 109px;}
             }
         }
-        .contact-form-bottom label{font-size: 26px;}
+        .contact-form-bottom label{font-size: 26px;
+            &.active{font-size: 19px;top: -18px;}
+        }
         .contact-form-bottoms{display: none;}
         .contact-submit{max-width: 279px;font-size: 27px;padding: 24px 0px;background-color: #932023;}
     }
 
+    /*clients*/
+    .clients {margin-bottom: -442px;margin-top: -1px;padding-top: 40px;
+        .clients-row-superwrap{padding: 75px 0px 0px;}
+        .clients-center{display: none;}
+        .clients-red{margin-bottom: 0px;min-height: 0;padding-top: 142px;}
+        .clients-red:after{transform: rotate(4.4deg);bottom: auto;top: -35px;background-size: 84%;left: 81px;}
+        .clients-title{position: relative;transform: translate(0%, 0) rotate(0deg);bottom: auto;z-index: 10;left: auto;text-align: center;line-height: 58px;margin-bottom: -30px;}
+        .clients-grey{padding-bottom: 30px;background: url('../images/contact-form-mobile-bg.jpg') center center no-repeat;}
+        .clients-item img {max-width: 93%;}
+        .clients-row{padding-bottom: 35px;}
+    }
+    .wrapper.eng{
+        .clients .clients-title{bottom: 17px;}
+        .clients .clients-red:after{top: -79px;}
+    }
 }
 @media screen and (max-width: 479px){
     /*contact-form*/

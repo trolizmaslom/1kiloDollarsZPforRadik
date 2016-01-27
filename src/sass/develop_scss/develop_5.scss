@@ -281,5 +281,14 @@
     /*END slider-animation*/
 }
 @media screen and (max-width: 640px){
-    .clients-and-slider{display: none;}
+    .slider{padding-top: 278px;}
+    .slider .slider-align .slider-wrapp .title h2{font: 700 60px/60px 'BebasNeue';}
+    .slider .slider-align .slider-wrapp .title p{font: 300 15px/15px 'Roboto';}
+    .one-slide .text p{font: 900 16.26px/18px 'Roboto';}
+    .one-slide .text ul {font: 400 18.26px/12.26px 'Roboto';}
+    .slider .slider-align{margin-top: 194px;}
+    .slider .slider-align:before{top: -70px;}
+    #dots {bottom: -86px;}
+    #dots li button {width: 83px;height: 55px;}
+    #arrows {bottom: -167px;}
 }
