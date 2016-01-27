@@ -125,11 +125,11 @@
 
     /* footer */
 
-        .footer{padding:60px 0 55px 0;background-image: -moz-linear-gradient(180deg, #811919 0%, #b62828 50%, #811919 100%);background-image: -webkit-linear-gradient(180deg, #811919 0%, #b62828 50%, #811919 100%);background-image: -ms-linear-gradient(180deg, #811919 0%, #b62828 50%, #811919 100%);
+        .footer{padding:60px 0 55px 0;/*background-image: -moz-linear-gradient(180deg, #811919 0%, #b62828 50%, #811919 100%);background-image: -webkit-linear-gradient(180deg, #811919 0%, #b62828 50%, #811919 100%);background-image: -ms-linear-gradient(180deg, #811919 0%, #b62828 50%, #811919 100%);*/
             .footer-conect{display: block;margin-bottom: 60px;
                 &:after{display: none;}
             }
-            .footer-text{font-size: 22px;color:#4e1112;}
+            .footer-text{font-size: 22px;/*color:#4e1112;*/}
         }
 
     /* /footer */
