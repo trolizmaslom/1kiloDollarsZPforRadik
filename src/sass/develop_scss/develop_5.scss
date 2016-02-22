@@ -33,9 +33,11 @@
                 }
             }
         }
+        a{pointer-events:none;}
     }
     .one-slide[data-slide="0"]{.image{width: 0;  height: 0; left:-400px; opacity: 0;bottom: 0; }}
     .active-slide{
+        a{pointer-events:inherit;}
         .text{left:764px; opacity: 1!important;}
         .image{width: 764px;  height: 468px; z-index: 100; opacity: 1; left:0;  bottom: 0;}
     }
