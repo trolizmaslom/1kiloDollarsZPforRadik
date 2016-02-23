@@ -3,7 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
+    <style>
+        #page-preloader {
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background: #002142;
+            z-index: 100500;
+        }
 
+        #page-preloader .spinner {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background: url('../images/gears.gif') no-repeat 50% 50%;
+            margin: -16px 0 0 -16px;
+        }
+    </style>
 
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,500italic,700,900&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css">
@@ -32,5 +53,6 @@
 
 </head>
 <body>
+    <div id="page-preloader"><span class="spinner"></span></div>
     <div class="wrapper lock">
 
