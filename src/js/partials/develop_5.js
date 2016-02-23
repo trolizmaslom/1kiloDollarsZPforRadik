@@ -25,6 +25,10 @@ $(document).ready(function(){
             }
         }
     });
+    $('.wach-video-button a').click(function(event) {
+        event.preventDefault();
+        scrollToContacts();
+    });
 });
 $(window).load(function(){
 });
@@ -37,3 +41,9 @@ $(window).on('load', function () {
     $spinner.fadeOut();
     $preloader.delay(350).fadeOut('slow');
 });
+
+function scrollToContacts(){
+    var scrlr =$('#contact-form').offset().top;
+    var body = $("body, html");
+    body.animate({scrollTop:scrlr}, '800');
+}
