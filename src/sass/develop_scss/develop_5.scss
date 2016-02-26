@@ -301,3 +301,12 @@
     }
     #arrows {bottom: -167px;}
 }
+.fancybox-type-iframe.fancybox-wrap{
+    max-width: 639px!important;
+}
+.fancybox-type-iframe.fancybox-wrap .fancybox-inner{
+    max-width: 635px!important;
+    overflow: hidden!important;
+        height: 305px!important;
+}
+.fancybox-skin {    padding: 2px!important;}
