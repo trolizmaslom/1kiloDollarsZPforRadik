@@ -287,8 +287,10 @@
 }
 @media screen and (max-width: 640px){
     .slider{padding-top: 278px;}
+    .slider .slider-align .slider-wrapp .title {padding-bottom: 45px;}
     .slider .slider-align .slider-wrapp .title h2{font: 700 60px/60px 'BebasNeue';}
     .slider .slider-align .slider-wrapp .title p{font: 300 15px/15px 'Roboto';}
+    .slider .slider-align .quadred{top:95px;}
     .one-slide .text p{font: 900 16.26px/18px 'Roboto';}
     .one-slide .text ul {font: 400 18.26px/12.26px 'Roboto';}
     .slider .slider-align{margin-top: 194px;}
